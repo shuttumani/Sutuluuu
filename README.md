@@ -292,6 +292,63 @@ index.html
   line-height:1.9;
   opacity:.95;
 }
+  .surpriseBox{
+  max-width:900px;
+  margin:0 auto;
+  background:#0f0f0f;
+  border:1px solid #222;
+  border-radius:16px;
+  padding:18px;
+  text-align:center;
+}
+
+.gift{
+  font-size:60px;
+  cursor:pointer;
+  animation:giftBounce 1.6s ease-in-out infinite;
+}
+
+@keyframes giftBounce{
+  0%,100%{transform:translateY(0);}
+  50%{transform:translateY(-10px);}
+}
+
+.revealText{
+  display:none;
+  margin-top:16px;
+  padding:14px;
+  background:#111;
+  border-radius:12px;
+  border:1px solid #222;
+  line-height:1.8;
+  opacity:.95;
+}
+
+.sparkle{
+  font-size:26px;
+  animation:sparkleGlow 1.5s infinite;
+}
+@keyframes sparkleGlow{
+  0%,100%{opacity:.7;}
+  50%{opacity:1;}
+}
+
+.loveRow{
+  display:flex;
+  flex-wrap:wrap;
+  justify-content:center;
+  gap:10px;
+  margin-top:14px;
+}
+
+.loveChip{
+  background:#111;
+  border:1px solid #2a2a2a;
+  padding:8px 12px;
+  border-radius:999px;
+  font-size:14px;
+  opacity:.9;
+}
 </style>
 </head>
 
@@ -394,6 +451,7 @@ index.html
       <button onclick="show('ourTimePage')">Our Time 📸</button>
       <button onclick="show('memoriesPage')">Memories 🪵</button>
       <button onclick="show('oneDayPage')">One Day 💍</button>
+      <button onclick="show('surprisePage')">Surprise ✨</button>
     </div>
 
     <div style="margin-top:18px;">
@@ -595,6 +653,59 @@ setInterval(()=>{
     grid.appendChild(card);
   }
 })();
+<div id="surprisePage" class="page scrollPage">
+  <h2 class="title" style="color:#ff4d88;">A Small Surprise ✨</h2>
+
+  <div class="surpriseBox">
+    <p style="opacity:.9;margin-top:0;">
+      I kept something special for you here…  
+      Tap the gift to open it 🎁
+    </p>
+
+    <div class="gift" onclick="openSurprise()">🎁</div>
+
+    <div id="hiddenSurprise" class="revealText">
+      <div class="sparkle">✨💖✨</div>
+
+      <p>
+        No matter what happens in life…  
+        I just want you to know one thing.
+      </p>
+
+      <p>
+        Meeting you was not an accident.  
+        Caring for you is not a duty.  
+        Loving you is not a choice…  
+        it just happened naturally.
+      </p>
+
+      <p>
+        Even if the world changes,  
+        my feeling for you will stay the same.
+      </p>
+
+      <div class="loveRow">
+        <div class="loveChip">You are my peace 🌙</div>
+        <div class="loveChip">You are my comfort 💗</div>
+        <div class="loveChip">You are my happiness 🥹</div>
+      </div>
+
+      <p style="margin-top:12px;">
+        And always remember…  
+        you will never be alone as long as I am here.
+      </p>
+
+      <div class="sparkle">✨ I Love You ✨</div>
+    </div>
+
+    <div style="margin-top:18px;">
+      <button class="btnDark" onclick="show('optionsPage')">Back 🌙</button>
+    </div>
+  </div>
+</div>
+function openSurprise(){
+  document.getElementById("hiddenSurprise").style.display = "block";
+}
 </script>
 
 </body>
