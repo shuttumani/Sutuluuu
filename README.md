@@ -309,16 +309,17 @@ index.html
 </div>
 <!-- DIARY PAGE -->
 <div id="diaryPage" class="page scrollPage">
+
   <h2 class="title" style="color:#ff4d88;">Daily Diary 📖</h2>
 
   <div class="card">
+
     <h3 style="margin-top:0;text-align:center;">Today’s message from me 💗</h3>
 
-    <!-- ✅ YOU EDIT THIS TEXT DAILY -->
     <p style="line-height:1.9;">
-      Today… I just want you to know that I’m proud of you.  
-      No matter how busy your day is, you are still my favorite thought.
-      Whenever you feel tired, remember: I’m always here. 🫂❤️
+      Today… I just want you to know that you mean a lot to me.
+      Even small talks with you make my day better.
+      Whatever happens, I’m always here for you. ❤️
     </p>
 
     <div style="display:flex;gap:10px;justify-content:center;flex-wrap:wrap;margin-top:16px;">
@@ -326,10 +327,9 @@ index.html
       <button class="btnDark" onclick="show('countdownPage')">Back ❤️</button>
     </div>
 
-    <p style="text-align:center;opacity:.75;margin-bottom:0;margin-top:14px;font-size:14px;">
-      (You can reply every day using the same form. I will read it in Google Forms → Responses.)
-    </p>
   </div>
+
+</div>
 </div>
 <!-- OPTIONS HUB -->
 <div id="optionsPage" class="page scrollPage">
