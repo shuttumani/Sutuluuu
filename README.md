@@ -337,7 +337,7 @@ index.html
     </p>
 
     <div style="display:flex;gap:10px;justify-content:center;flex-wrap:wrap;margin-top:16px;">
-  <button onclick="show('replyPage')">Reply Today 💌</button>
+<button onclick="openForm()">Reply Today 💌</button>
   <button onclick="show('optionsPage')">Our World 🌙</button>
   <button class="btnDark" onclick="show('countdownPage')">Back ❤️</button>
 </div>
@@ -398,6 +398,10 @@ index.html
   </div>
 </div>
 <script>
+  const FORM_URL = "https://docs.google.com/forms/d/e/1FAIpQLSc1JncNbHTVKlZooN4NaDi_Ov08J6Q1g-v5PMHlNnZ_mcGp6A/viewform?usp=dialog";
+  function openForm(){
+  window.open(FORM_URL, "_blank");
+}
   function show(pageId){
     document.querySelectorAll('.page').forEach(p=>p.classList.remove('active'));
     document.getElementById(pageId).classList.add('active');
