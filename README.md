@@ -142,6 +142,63 @@ index.html
     margin:10px 0 0;
     opacity:.95;
   }
+  /* NEW ENVELOPE DESIGN */
+.newEnvelope{
+  position:relative;
+  width:260px;
+  height:170px;
+  cursor:pointer;
+  margin-top:10px;
+}
+
+.newEnvelope .body{
+  position:absolute;
+  inset:0;
+  background:#d6336c;
+  border-radius:12px;
+  box-shadow:0 10px 30px rgba(0,0,0,0.4);
+}
+
+.newEnvelope .topFlap{
+  position:absolute;
+  top:0;
+  left:0;
+  width:0;
+  height:0;
+  border-left:130px solid transparent;
+  border-right:130px solid transparent;
+  border-top:85px solid #ff6b9e;
+  transform-origin:top;
+  transition:transform 0.8s ease;
+  z-index:3;
+}
+
+.newEnvelope .paper{
+  position:absolute;
+  top:20px;
+  left:10px;
+  right:10px;
+  bottom:10px;
+  background:#fff0f6;
+  border-radius:10px;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  font-size:28px;
+  color:#d6336c;
+  transform:translateY(40px);
+  transition:transform 0.8s ease;
+  z-index:1;
+}
+
+.newEnvelope.open .topFlap{
+  transform:rotateX(180deg);
+}
+
+.newEnvelope.open .paper{
+  transform:translateY(-20px);
+    }
+  
 </style>
 </head>
 
@@ -156,25 +213,32 @@ index.html
   <div class="center">
     <h1>shuttumani 💋</h1>
     <div style="opacity:.85">Password: 01032025</div>
-    <input id="passwordInput" type="password" placeholder="Enter date" />
+    <input type="password" id="passwordInput" placeholder="Enter date">
+    
     <button onclick="checkPassword()">Unlock</button>
   </div>
 </div>
 
 <!-- ENVELOPE -->
+<!-- ENVELOPE PAGE -->
 <div id="envelopePage" class="page">
   <div class="center">
-    <h2>Love Letter 💌</h2>
 
-    <div class="envelopeWrap" id="env" onclick="openLetter()">
-      <div class="envFlap"></div>
-      <div class="envBody"></div>
-      <div class="tapText">Tap to open 💌</div>
+    <h2 style="margin-bottom:10px;">Love Letter 💌</h2>
+
+    <div class="newEnvelope" onclick="openLetter()">
+      <div class="topFlap"></div>
+      <div class="body"></div>
+      <div class="paper">💖</div>
     </div>
 
+    <p style="opacity:0.8;">Tap the envelope to open 💌</p>
+
     <button class="btnDark" onclick="show('lockPage')">Back 🔒</button>
+
   </div>
 </div>
+
 
 <!-- LETTER (SCROLL) -->
 <div id="letterPage" class="page scrollPage">
@@ -237,11 +301,14 @@ index.html
   }
 
   function openLetter(){
-    const env = document.getElementById("env");
-    env.classList.add("open");
-    setTimeout(()=>show("letterPage"), 650);
-  }
+  const env = document.querySelector(".newEnvelope");
+  env.classList.add("open");
 
+  setTimeout(() => {
+    show("letterPage");
+  }, 900);
+  }
+  
   // hearts
   setInterval(function(){
     const heart=document.createElement("div");
