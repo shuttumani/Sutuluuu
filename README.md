@@ -1070,6 +1070,22 @@ index.html
       This is not just a page… it’s my feelings, written in a way you can feel.  
       Scroll… and watch how deeply I love you. 🫶
     </p>
+    <!-- SECRET TRIGGER -->
+<p id="secretHint"
+   style="margin:14px 0 0; opacity:.8; text-align:center; text-decoration:underline; cursor:pointer;"
+   onclick="toggleSecretBox()">
+  psst... try this secret ✨
+</p>
+
+<!-- SECRET BOX (hidden) -->
+<div id="secretBox" style="display:none; margin-top:14px; text-align:center;">
+  <p style="opacity:.85; margin:0 0 10px;">Secret unlocked ✨ Type the magic word…</p>
+  <input id="secretInput" placeholder="type here..."
+         style="padding:12px; border-radius:12px; border:none; width:min(360px,85vw); text-align:center;" />
+  <div style="margin-top:10px;">
+    <button onclick="checkSecret()">Unlock 💍</button>
+  </div>
+</div>
 
     <div class="finalCard">
       <div id="typeLine" class="typeLine"> </div>
@@ -1401,7 +1417,40 @@ function closeSecret(){
   const m = document.getElementById("secretModal");
   if(m) m.style.display = "none";
 }
-</script>
+function toggleSecretBox(){
+  const box = document.getElementById("secretBox");
+  if(!box) return;
+  box.style.display = (box.style.display === "none" || !box.style.display) ? "block" : "none";
+}
 
+function checkSecret(){
+  const val = (document.getElementById("secretInput")?.value || "").trim().toLowerCase();
+  // magic word you choose:
+  if(val === "shuttumani" || val === "sutu" || val === "marryme"){
+    document.getElementById("secretModal").style.display = "block";
+  } else {
+    alert("Wrong secret 😌 Try again");
+  }
+}
+
+function closeSecret(){
+  document.getElementById("secretModal").style.display = "none";
+}
+</script>
+<!-- SECRET MODAL -->
+<div id="secretModal" style="display:none; position:fixed; inset:0; z-index:10000;">
+  <div style="position:absolute; inset:0; background:rgba(0,0,0,.7); backdrop-filter:blur(8px);" onclick="closeSecret()"></div>
+
+  <div style="position:absolute; left:50%; top:50%; transform:translate(-50%,-50%);
+              width:min(520px,92vw); background:#0f0f0f; border:1px solid rgba(255,77,166,.25);
+              border-radius:20px; padding:18px; text-align:center; box-shadow:0 30px 80px rgba(0,0,0,.55);">
+    <h2 style="margin:0 0 8px; color:#ff4da6;">💍 Will you marry me?</h2>
+    <p style="opacity:.92; line-height:1.7; margin:0 0 14px;">
+      Not today, not tomorrow… but one day…<br>
+      I want to hold your hand forever, and call you mine in front of the world. ❤️
+    </p>
+    <button class="btnDark" onclick="closeSecret()">Close ✖</button>
+  </div>
+</div>
 </body>
 </html>
