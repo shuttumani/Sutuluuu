@@ -1,5 +1,3 @@
-index.html
-<!DOCTYPE html>
 <html>
 <head>
 <meta charset="UTF-8" />
@@ -775,7 +773,6 @@ index.html
       onkeydown="if(event.key==='Enter'){ checkPassword(); }">
 
     <button type="button" onclick="checkPassword()">Unlock</button>
-  </div>
 </div>
 <div id="envelopePage" class="page">
   <div class="center">
@@ -788,7 +785,6 @@ index.html
     </div>
 
     <p style="opacity:.8;margin:8px 0 0;">Tap the envelope to open 💌</p>
-  </div>
 </div>
 <div id="letterPage" class="page scrollPage">
   <h2 class="title">For You ❤️</h2>
@@ -806,7 +802,6 @@ index.html
   <div style="max-width:720px;margin:14px auto 30px;display:flex;gap:10px;justify-content:center;flex-wrap:wrap;">
     <button onclick="show('countdownPage')">Our Date 💞</button>
     <button class="btnDark" onclick="show('envelopePage')">Back 💌</button>
-  </div>
 </div>
 <div id="countdownPage" class="page scrollPage">
   <h2 class="title" style="color:#ff4d88;">We committed on</h2>
