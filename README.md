@@ -451,7 +451,6 @@ index.html
       <button onclick="show('ourTimePage')">Our Time 📸</button>
       <button onclick="show('memoriesPage')">Memories 🪵</button>
       <button onclick="show('oneDayPage')">One Day 💍</button>
-      <button onclick="show('surprisePage')">Surprise ✨</button>
     </div>
 
     <div style="margin-top:18px;">
@@ -655,55 +654,7 @@ setInterval(()=>{
 })();
 <div id="surprisePage" class="page scrollPage">
   <h2 class="title" style="color:#ff4d88;">A Small Surprise ✨</h2>
-
-  <div class="surpriseBox">
-    <p style="opacity:.9;margin-top:0;">
-      I kept something special for you here…  
-      Tap the gift to open it 🎁
-    </p>
-
-    <div class="gift" onclick="openSurprise()">🎁</div>
-
-    <div id="hiddenSurprise" class="revealText">
-      <div class="sparkle">✨💖✨</div>
-
-      <p>
-        No matter what happens in life…  
-        I just want you to know one thing.
-      </p>
-
-      <p>
-        Meeting you was not an accident.  
-        Caring for you is not a duty.  
-        Loving you is not a choice…  
-        it just happened naturally.
-      </p>
-
-      <p>
-        Even if the world changes,  
-        my feeling for you will stay the same.
-      </p>
-
-      <div class="loveRow">
-        <div class="loveChip">You are my peace 🌙</div>
-        <div class="loveChip">You are my comfort 💗</div>
-        <div class="loveChip">You are my happiness 🥹</div>
-      </div>
-
-      <p style="margin-top:12px;">
-        And always remember…  
-        you will never be alone as long as I am here.
-      </p>
-
-      <div class="sparkle">✨ I Love You ✨</div>
-    </div>
-
-    <div style="margin-top:18px;">
-      <button class="btnDark" onclick="show('optionsPage')">Back 🌙</button>
-    </div>
-  </div>
-</div>
-
+  
 </script>
 
 </body>
