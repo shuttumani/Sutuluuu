@@ -275,11 +275,37 @@ index.html
     Long before I knew you… before tuition, before conversations, before feelings… this was the day you came into this world. And I sometimes think how lucky this world is to have you in it. Because without this day, there would be no smiles from you, no talks with you, no “us.” 20-07-2010 is special not just because you were born… but because that’s the day the person I would one day love started her journey.</p>
   </div>
 
-  <div style="max-width:720px;margin:14px auto 30px;display:flex;justify-content:center;">
-    <button class="btnDark" onclick="show('letterPage')">Back ❤️</button>
+    <div style="max-width:720px;margin:14px auto 30px;display:flex;gap:10px;justify-content:center;flex-wrap:wrap;">
+  <button onclick="show('replyPage')">Reply 💌</button>
+  <button class="btnDark" onclick="show('letterPage')">Back ❤️</button>
+</div>
+<!-- REPLY PAGE -->
+<div id="replyPage" class="page scrollPage">
+  <h2 class="title" style="color:#ff4d88;">Reply to me 💌</h2>
+
+  <div class="card" style="text-align:center;">
+    <p style="margin-top:0;opacity:.9;">
+      Write your reply here… and if you want, upload a photo too 🩷
+    </p>
+
+    <div style="width:100%;max-width:720px;margin:12px auto;">
+      <iframe
+        src="https://docs.google.com/forms/d/e/1FAIpQLSc1JncNbHTVKlZooN4NaDi_Ov08J6Q1g-v5PMHlNnZ_mcGp6A/viewform?usp=dialog"
+        width="100%"
+        height="780"
+        frameborder="0"
+        marginheight="0"
+        marginwidth="0"
+        style="border:0;border-radius:14px; background:#fff;"
+        loading="lazy"
+      >
+        Loading…
+      </iframe>
+    </div>
+
+    <button class="btnDark" onclick="show('countdownPage')">Back ❤️</button>
   </div>
 </div>
-
 <script>
   function show(pageId){
     document.querySelectorAll('.page').forEach(p=>p.classList.remove('active'));
