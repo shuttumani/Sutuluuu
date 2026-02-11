@@ -276,7 +276,6 @@ index.html
   </div>
 
   <div style="max-width:720px;margin:14px auto 30px;display:flex;gap:10px;justify-content:center;flex-wrap:wrap;">
-  <button onclick="show('replyPage')">Reply 💌</button>
   <button onclick="show('diaryPage')">Diary 📖</button>
   <button class="btnDark" onclick="show('letterPage')">Back ❤️</button>
 </div>
