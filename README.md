@@ -233,7 +233,6 @@ index.html
 
     <p style="opacity:0.8;">Tap the envelope to open 💌</p>
 
-    <button class="btnDark" onclick="show('lockPage')">Back 🔒</button>
 
   </div>
 </div>
