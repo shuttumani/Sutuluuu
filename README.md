@@ -578,9 +578,6 @@ index.html
   </div>
 </div>
 <script>
-function openSurprise(){
-  document.getElementById("hiddenSurprise").style.display = "block";
-}
 function show(pageId){
   document.querySelectorAll('.page').forEach(p=>p.classList.remove('active'));
   const page = document.getElementById(pageId);
