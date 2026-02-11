@@ -774,7 +774,6 @@
 
     <button type="button" onclick="checkPassword()">Unlock</button>
 </div>
-</div>
 <div id="envelopePage" class="page">
   <div class="center">
     <h2 style="margin:0 0 8px;">Love Letter 💌</h2>
@@ -821,7 +820,7 @@
     <p>💗 20-07-2010 — The Day the World Became Beautiful  
     Long before I knew you… before tuition, before conversations, before feelings… this was the day you came into this world. And I sometimes think how lucky this world is to have you in it. Because without this day, there would be no smiles from you, no talks with you, no “us.” 20-07-2010 is special not just because you were born… but because that’s the day the person I would one day love started her journey.</p>
   </div>
-
+</div>
   <div style="max-width:720px;margin:14px auto 30px;display:flex;gap:10px;justify-content:center;flex-wrap:wrap;">
     <button onclick="show('diaryPage')">Diary 📖</button>
     <button class="btnDark" onclick="show('letterPage')">Back ❤️</button>
