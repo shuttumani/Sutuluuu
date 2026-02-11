@@ -212,7 +212,6 @@ index.html
 <div id="lockPage" class="page active">
   <div class="center">
     <h1>shuttumani 💋</h1>
-    <div style="opacity:.85">Password: 01032025</div>
     <input type="password" id="passwordInput" placeholder="Enter date">
     
     <button onclick="checkPassword()">Unlock</button>
