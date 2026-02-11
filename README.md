@@ -101,7 +101,7 @@ h2{
 <div id="lockScreen">
   <h1>🔒 Private Page</h1>
   <p>Enter the magic words 💋</p>
-  <input id="password" placeholder="Type here..." />
+  <input id="password" placeholder="01032025" />
   <button onclick="unlock()">Unlock ❤️</button>
 </div>
 
