@@ -1141,11 +1141,52 @@ index.html
       <div class="finalBtns">
         <button class="btnDark" onclick="show('surprisePage')">Back 🌙</button>
         <button onclick="replayFinal()">Replay ✨</button>
+        <button onclick="startUmmaCountdown()">Ummahhh 💋</button>
       </div>
     </div>
   </div>
 </div>
+<!-- SPECIAL UMMAH COUNTDOWN PAGE -->
+<div id="ummaCountdownPage" class="page scrollPage">
+  <div class="center">
+
+    <h2 style="color:#ff4da6;">Coming Back To You 💋</h2>
+
+    <p style="opacity:0.9;">
+      A small wait… before we go back to the beginning again 💖
+    </p>
+
+    <h1 id="ummaTimer" style="font-size:42px; margin-top:10px;">15</h1>
+
+    <p style="opacity:0.8;">seconds left…</p>
+
+  </div>
+</div>
 <script>
+  function ummahhh(){
+  closeSecret();
+
+  // Open new countdown page
+  show("ummaCountdownPage");
+
+  let timeLeft = 15;
+
+  document.getElementById("ummaTimer").innerText = timeLeft;
+
+  const interval = setInterval(() => {
+    timeLeft--;
+
+    document.getElementById("ummaTimer").innerText = timeLeft;
+
+    if(timeLeft <= 0){
+      clearInterval(interval);
+
+      // After countdown finishes → open envelope page
+      show("envelopePage");
+    }
+
+  }, 1000);
+}
   function openSurprise(){
   const box = document.getElementById("hiddenSurprise");
   if(box) box.style.display = "block";
