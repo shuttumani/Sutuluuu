@@ -1012,7 +1012,7 @@ index.html
 
     <div style="margin-top:14px; display:flex; gap:10px; justify-content:center; flex-wrap:wrap;">
       <button class="btnDark" onclick="show('optionsPage')">Back 🌙</button>
-      <button onclick="show('step10Page')">Until We Complete 💖</button>
+      <button onclick="openFinal()">Until We Complete ✨</button>
       <!-- Keep this if you already have Step 10 page id -->
       <!-- <button class="btnDark" onclick="show('loveFloodPage')">Next 💖</button> -->
     </div>
