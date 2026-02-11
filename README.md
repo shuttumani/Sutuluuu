@@ -36,6 +36,262 @@ index.html
   .newEnvelope .paper{position:absolute;top:20px;left:10px;right:10px;bottom:10px;background:#fff0f6;border-radius:10px;display:flex;justify-content:center;align-items:center;font-size:28px;color:#d6336c;transform:translateY(40px);transition:transform .8s ease;z-index:2;}
   .newEnvelope.open .topFlap{transform:rotateX(180deg);}
   .newEnvelope.open .paper{transform:translateY(-20px);}
+  .gallery{
+  max-width:900px;
+  margin:0 auto;
+  display:grid;
+  grid-template-columns:repeat(3, 1fr);
+  gap:10px;
+}
+@media (min-width:700px){
+  .gallery{ grid-template-columns:repeat(4, 1fr); }
+}
+.photoCard{
+  background:#0f0f0f;
+  border-radius:14px;
+  overflow:hidden;
+  border:1px solid #222;
+}
+.photoCard img{
+  width:100%;
+  height:140px;
+  object-fit:cover;
+  display:block;
+  background:#111;
+}
+.photoCap{
+  padding:8px 10px;
+  font-size:13px;
+  opacity:.9;
+  text-align:left;
+}
+  .scene{
+  max-width:900px;
+  margin:0 auto;
+  background:#0f0f0f;
+  border:1px solid #222;
+  border-radius:16px;
+  padding:16px;
+}
+
+.sceneTitle{
+  margin:0 0 10px;
+  color:#ff4d88;
+  text-align:center;
+}
+
+.benchArea{
+  position:relative;
+  height:180px;
+  border-radius:14px;
+  background:linear-gradient(180deg,#0b0b0b,#121212);
+  overflow:hidden;
+  border:1px solid #222;
+}
+
+.bench{
+  position:absolute;
+  left:-60%;
+  top:60%;
+  width:180%;
+  height:50px;
+  background:linear-gradient(90deg,#7a4a2a,#5c341d);
+  border-radius:14px;
+  box-shadow:0 10px 30px rgba(0,0,0,.4);
+  animation: benchSlide 7s ease-in-out infinite;
+}
+
+.table{
+  position:absolute;
+  left:-40%;
+  top:30%;
+  width:160%;
+  height:36px;
+  background:linear-gradient(90deg,#9a5f35,#6a3b20);
+  border-radius:14px;
+  opacity:.95;
+  animation: tableSlide 7s ease-in-out infinite;
+}
+
+@keyframes benchSlide{
+  0%{transform:translateX(0);}
+  50%{transform:translateX(20%);}
+  100%{transform:translateX(0);}
+}
+@keyframes tableSlide{
+  0%{transform:translateX(0);}
+  50%{transform:translateX(-18%);}
+  100%{transform:translateX(0);}
+}
+
+.kids{
+  position:absolute;
+  left:50%;
+  top:48%;
+  transform:translate(-50%,-50%);
+  display:flex;
+  gap:14px;
+  align-items:center;
+  font-size:34px;
+  z-index:5;
+}
+.kids .hand{
+  font-size:22px;
+  opacity:.9;
+  animation: handPulse 1.4s ease-in-out infinite;
+}
+@keyframes handPulse{
+  0%,100%{transform:scale(1);}
+  50%{transform:scale(1.15);}
+}
+
+.stairsArea{
+  position:relative;
+  height:200px;
+  border-radius:14px;
+  background:linear-gradient(180deg,#0b0b0b,#151515);
+  overflow:hidden;
+  border:1px solid #222;
+  margin-top:14px;
+}
+
+.step{
+  position:absolute;
+  bottom:0;
+  width:120%;
+  height:26px;
+  background:#1c1c1c;
+  border-top:1px solid #2a2a2a;
+  transform:skewX(-18deg);
+}
+.step.s1{bottom:0; opacity:.95;}
+.step.s2{bottom:26px; opacity:.9;}
+.step.s3{bottom:52px; opacity:.85;}
+.step.s4{bottom:78px; opacity:.8;}
+.step.s5{bottom:104px; opacity:.75;}
+.step.s6{bottom:130px; opacity:.7;}
+
+.whisper{
+  position:absolute;
+  left:50%;
+  top:52%;
+  transform:translate(-50%,-50%);
+  font-size:30px;
+  display:flex;
+  gap:12px;
+  align-items:center;
+  z-index:5;
+}
+.bubble{
+  background:#111;
+  border:1px solid #2a2a2a;
+  padding:8px 12px;
+  border-radius:999px;
+  font-size:13px;
+  opacity:.9;
+  animation: bubbleFloat 2.2s ease-in-out infinite;
+}
+@keyframes bubbleFloat{
+  0%,100%{transform:translateY(0);}
+  50%{transform:translateY(-6px);}
+}
+  .futureWrap{
+  max-width:900px;
+  margin:0 auto;
+  background:#0f0f0f;
+  border:1px solid #222;
+  border-radius:16px;
+  padding:16px;
+}
+
+.ringGlow{
+  font-size:46px;
+  animation:ringPulse 1.6s ease-in-out infinite;
+  filter:drop-shadow(0 0 12px rgba(255,77,136,.35));
+}
+@keyframes ringPulse{
+  0%,100%{transform:scale(1);}
+  50%{transform:scale(1.12);}
+}
+
+.weddingScene{
+  position:relative;
+  height:210px;
+  border-radius:14px;
+  background:linear-gradient(180deg,#070707,#151515);
+  border:1px solid #222;
+  overflow:hidden;
+  margin-top:12px;
+}
+
+.lights{
+  position:absolute;
+  inset:-20px;
+  background:
+    radial-gradient(circle at 20% 20%, rgba(255,77,136,.22), transparent 45%),
+    radial-gradient(circle at 80% 30%, rgba(58,160,255,.18), transparent 45%),
+    radial-gradient(circle at 50% 70%, rgba(255,255,255,.08), transparent 50%);
+  animation:lightsMove 6s ease-in-out infinite;
+}
+@keyframes lightsMove{
+  0%,100%{transform:translateY(0);}
+  50%{transform:translateY(10px);}
+}
+
+.couple{
+  position:absolute;
+  left:50%;
+  top:55%;
+  transform:translate(-50%,-50%);
+  font-size:44px;
+  display:flex;
+  gap:14px;
+  align-items:center;
+  z-index:5;
+}
+.couple .kiss{
+  font-size:26px;
+  animation:kissPop 1.2s ease-in-out infinite;
+}
+@keyframes kissPop{
+  0%,100%{transform:scale(1);opacity:.9;}
+  50%{transform:scale(1.2);opacity:1;}
+}
+
+.kidsRow{
+  margin-top:14px;
+  display:flex;
+  justify-content:center;
+  gap:12px;
+  flex-wrap:wrap;
+}
+
+.kidBubble{
+  background:#111;
+  border:1px solid #2a2a2a;
+  border-radius:999px;
+  padding:10px 14px;
+  font-size:15px;
+  opacity:.95;
+  animation:kidFloat 2.3s ease-in-out infinite;
+}
+.kidBubble:nth-child(2){animation-delay:.3s;}
+.kidBubble:nth-child(3){animation-delay:.6s;}
+@keyframes kidFloat{
+  0%,100%{transform:translateY(0);}
+  50%{transform:translateY(-6px);}
+}
+
+.promiseLine{
+  margin-top:14px;
+  padding:12px 14px;
+  border-radius:14px;
+  background:#111;
+  border:1px solid #222;
+  text-align:left;
+  line-height:1.9;
+  opacity:.95;
+}
 </style>
 </head>
 
@@ -148,24 +404,118 @@ index.html
 
 <div id="ourTimePage" class="page scrollPage">
   <h2 class="title" style="color:#ff4d88;">Our Time 📸</h2>
-  <div class="card">
-    <p style="margin-top:0;">Here we will add our photos later (gallery).</p>
-    <button class="btnDark" onclick="show('optionsPage')">Back 🌙</button>
+
+  <div class="card" style="text-align:center;">
+    <p style="margin-top:0;opacity:.9;">
+      This is our photo wall 💗  
+      (I added 50 slots. You can replace photos later.)
+    </p>
+
+    <div class="gallery" id="galleryGrid"></div>
+
+    <div style="margin-top:16px;">
+      <button class="btnDark" onclick="show('optionsPage')">Back 🌙</button>
+    </div>
   </div>
 </div>
 
 <div id="memoriesPage" class="page scrollPage">
   <h2 class="title" style="color:#ff4d88;">Memories 🪵</h2>
+
   <div class="card">
-    <p style="margin-top:0;">Tuition bench memories + staircase secret talks will be animated in next steps.</p>
+    <p style="margin-top:0;">
+      Tuition days… that long wooden bench and the long table.
+      Sitting close, acting normal… but inside my heart was shouting.
+    </p>
+    <p>
+      And those secret talks on the staircase to the second floor…
+      where we looked like strangers outside, but inside we were building our own world.
+    </p>
+    <p style="opacity:.9;">
+      Some places become memories not because of the place… but because YOU were there. 💗
+    </p>
+  </div>
+
+  <div class="scene" style="margin-top:14px;">
+    <h3 class="sceneTitle">📚 Tuition Bench Moment</h3>
+    <div class="benchArea">
+      <div class="table"></div>
+      <div class="bench"></div>
+      <div class="kids">
+        <span>🧑‍🎓</span>
+        <span class="hand">🤝</span>
+        <span>👩‍🎓</span>
+      </div>
+    </div>
+    <p style="opacity:.85;margin:10px 0 0;">
+      That small “hand-hold” felt bigger than the whole classroom.
+    </p>
+  </div>
+
+  <div class="scene" style="margin-top:14px;">
+    <h3 class="sceneTitle">🪜 Staircase Secret Talk</h3>
+    <div class="stairsArea">
+      <div class="step s1"></div><div class="step s2"></div><div class="step s3"></div>
+      <div class="step s4"></div><div class="step s5"></div><div class="step s6"></div>
+
+      <div class="whisper">
+        <span>🧑</span>
+        <span class="bubble">“don’t look 😳”</span>
+        <span>👩</span>
+      </div>
+    </div>
+    <p style="opacity:.85;margin:10px 0 0;">
+      We spoke softly… but the memory stayed loud in my heart.
+    </p>
+  </div>
+
+  <div style="max-width:720px;margin:14px auto 30px;display:flex;gap:10px;justify-content:center;flex-wrap:wrap;">
     <button class="btnDark" onclick="show('optionsPage')">Back 🌙</button>
   </div>
 </div>
 
 <div id="oneDayPage" class="page scrollPage">
   <h2 class="title" style="color:#ff4d88;">One Day 💍</h2>
-  <div class="card">
-    <p style="margin-top:0;">Marriage/future life animations will be added in next steps.</p>
+
+  <div class="card" style="text-align:center;">
+    <div class="ringGlow">💍</div>
+    <p style="margin:10px 0 0;opacity:.92;">
+      One day… not in a rush, not only in dreams — in real life…  
+      I want a peaceful home where your laugh is the loudest sound.
+    </p>
+  </div>
+
+  <div class="futureWrap" style="margin-top:14px;">
+    <h3 style="margin:0;color:#ff4d88;text-align:center;">Our Wedding Moment ✨</h3>
+
+    <div class="weddingScene">
+      <div class="lights"></div>
+      <div class="couple">
+        <span>🤵</span>
+        <span class="kiss">💋</span>
+        <span>👰</span>
+      </div>
+    </div>
+
+    <div class="promiseLine">
+      I want to hold your hand in crowds and still feel like it’s only us.  
+      Morning tea, small fights, silly jokes, planning trips…  
+      and always coming back to the same comfort — **you**.
+    </div>
+
+    <h3 style="margin:16px 0 8px;color:#ff4d88;text-align:center;">Our Little Future 👶💗</h3>
+    <div class="kidsRow">
+      <div class="kidBubble">👶 “amma!”</div>
+      <div class="kidBubble">👧 “appa!”</div>
+      <div class="kidBubble">🧸 “our home”</div>
+    </div>
+
+    <p style="opacity:.9;text-align:center;margin:12px 0 0;">
+      I don’t want a perfect life… I want a life with you. 🩷
+    </p>
+  </div>
+
+  <div style="max-width:720px;margin:14px auto 30px;display:flex;gap:10px;justify-content:center;flex-wrap:wrap;">
     <button class="btnDark" onclick="show('optionsPage')">Back 🌙</button>
   </div>
 </div>
@@ -222,6 +572,28 @@ setInterval(()=>{
     const el = document.getElementById("countdownTimer");
     if(el) el.innerHTML = `${days} days 💕 ${hours} hrs 💕 ${mins} mins 💕 ${secs} sec together`;
   },1000);
+})();
+(function buildGallery(){
+  const grid = document.getElementById("galleryGrid");
+  if(!grid) return;
+
+  for(let i=1; i<=50; i++){
+    const card = document.createElement("div");
+    card.className = "photoCard";
+
+    // placeholder image (works even if you don't add photos yet)
+    const img = document.createElement("img");
+    img.alt = "Photo " + i;
+    img.src = `https://picsum.photos/seed/shuttumani_${i}/500/500`;
+
+    const cap = document.createElement("div");
+    cap.className = "photoCap";
+    cap.innerHTML = `💗 Photo ${i}`;
+
+    card.appendChild(img);
+    card.appendChild(cap);
+    grid.appendChild(card);
+  }
 })();
 </script>
 
