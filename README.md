@@ -275,8 +275,9 @@ index.html
     Long before I knew you… before tuition, before conversations, before feelings… this was the day you came into this world. And I sometimes think how lucky this world is to have you in it. Because without this day, there would be no smiles from you, no talks with you, no “us.” 20-07-2010 is special not just because you were born… but because that’s the day the person I would one day love started her journey.</p>
   </div>
 
-    <div style="max-width:720px;margin:14px auto 30px;display:flex;gap:10px;justify-content:center;flex-wrap:wrap;">
+  <div style="max-width:720px;margin:14px auto 30px;display:flex;gap:10px;justify-content:center;flex-wrap:wrap;">
   <button onclick="show('replyPage')">Reply 💌</button>
+  <button onclick="show('diaryPage')">Diary 📖</button>
   <button class="btnDark" onclick="show('letterPage')">Back ❤️</button>
 </div>
 <!-- REPLY PAGE -->
@@ -304,6 +305,31 @@ index.html
     </div>
 
     <button class="btnDark" onclick="show('countdownPage')">Back ❤️</button>
+  <button onclick="show('diaryPage')" style="margin-top:12px;">Go to Diary 📖</button>
+  </div>
+</div>
+<!-- DIARY PAGE -->
+<div id="diaryPage" class="page scrollPage">
+  <h2 class="title" style="color:#ff4d88;">Daily Diary 📖</h2>
+
+  <div class="card">
+    <h3 style="margin-top:0;text-align:center;">Today’s message from me 💗</h3>
+
+    <!-- ✅ YOU EDIT THIS TEXT DAILY -->
+    <p style="line-height:1.9;">
+      Today… I just want you to know that I’m proud of you.  
+      No matter how busy your day is, you are still my favorite thought.
+      Whenever you feel tired, remember: I’m always here. 🫂❤️
+    </p>
+
+    <div style="display:flex;gap:10px;justify-content:center;flex-wrap:wrap;margin-top:16px;">
+      <button onclick="show('replyPage')">Reply Today 💌</button>
+      <button class="btnDark" onclick="show('countdownPage')">Back ❤️</button>
+    </div>
+
+    <p style="text-align:center;opacity:.75;margin-bottom:0;margin-top:14px;font-size:14px;">
+      (You can reply every day using the same form. I will read it in Google Forms → Responses.)
+    </p>
   </div>
 </div>
 <script>
