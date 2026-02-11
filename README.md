@@ -1158,7 +1158,6 @@ index.html
 </div>
 <script>
 function startUmmaCountdown(){
-  alert("UMMAH CLICKED ✅");   // test message (remove later)
 
   show("ummaCountdownPage");
 
