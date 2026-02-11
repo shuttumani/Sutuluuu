@@ -194,7 +194,7 @@ index.html
 @keyframes bubbleFloat{
   0%,100%{transform:translateY(0);}
   50%{transform:translateY(-6px);}
-}
+  }
   .futureWrap{
   max-width:900px;
   margin:0 auto;
@@ -291,64 +291,7 @@ index.html
   text-align:left;
   line-height:1.9;
   opacity:.95;
-}
-  .surpriseBox{
-  max-width:900px;
-  margin:0 auto;
-  background:#0f0f0f;
-  border:1px solid #222;
-  border-radius:16px;
-  padding:18px;
-  text-align:center;
-}
-
-.gift{
-  font-size:60px;
-  cursor:pointer;
-  animation:giftBounce 1.6s ease-in-out infinite;
-}
-
-@keyframes giftBounce{
-  0%,100%{transform:translateY(0);}
-  50%{transform:translateY(-10px);}
-}
-
-.revealText{
-  display:none;
-  margin-top:16px;
-  padding:14px;
-  background:#111;
-  border-radius:12px;
-  border:1px solid #222;
-  line-height:1.8;
-  opacity:.95;
-}
-
-.sparkle{
-  font-size:26px;
-  animation:sparkleGlow 1.5s infinite;
-}
-@keyframes sparkleGlow{
-  0%,100%{opacity:.7;}
-  50%{opacity:1;}
-}
-
-.loveRow{
-  display:flex;
-  flex-wrap:wrap;
-  justify-content:center;
-  gap:10px;
-  margin-top:14px;
-}
-
-.loveChip{
-  background:#111;
-  border:1px solid #2a2a2a;
-  padding:8px 12px;
-  border-radius:999px;
-  font-size:14px;
-  opacity:.9;
-}
+          }
 </style>
 </head>
 
@@ -475,6 +418,7 @@ index.html
     </div>
   </div>
 </div>
+</div>
 
 <div id="memoriesPage" class="page scrollPage">
   <h2 class="title" style="color:#ff4d88;">Memories 🪵</h2>
@@ -530,6 +474,7 @@ index.html
     <button class="btnDark" onclick="show('optionsPage')">Back 🌙</button>
   </div>
 </div>
+</div>
 
 <div id="oneDayPage" class="page scrollPage">
   <h2 class="title" style="color:#ff4d88;">One Day 💍</h2>
@@ -575,6 +520,7 @@ index.html
   <div style="max-width:720px;margin:14px auto 30px;display:flex;gap:10px;justify-content:center;flex-wrap:wrap;">
     <button class="btnDark" onclick="show('optionsPage')">Back 🌙</button>
   </div>
+</div>
 </div>
 <script>
 function show(pageId){
@@ -652,9 +598,6 @@ setInterval(()=>{
     grid.appendChild(card);
   }
 })();
-<div id="surprisePage" class="page scrollPage">
-  <h2 class="title" style="color:#ff4d88;">A Small Surprise ✨</h2>
-  
 </script>
 
 </body>
