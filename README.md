@@ -280,7 +280,6 @@ index.html
   <button class="btnDark" onclick="show('letterPage')">Back ❤️</button>
 </div>
 
-</div>
 <!-- DIARY PAGE -->
 <div id="diaryPage" class="page scrollPage">
 
@@ -297,7 +296,6 @@ index.html
     </p>
 
     <div style="display:flex;gap:10px;justify-content:center;flex-wrap:wrap;margin-top:16px;">
-      <button onclick="show('replyPage')">Reply Today 💌</button>
       <button class="btnDark" onclick="show('countdownPage')">Back ❤️</button>
     </div>
 
