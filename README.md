@@ -1424,12 +1424,12 @@ function toggleSecretBox(){
 }
 
 function checkSecret(){
-  const val = (document.getElementById("secretInput")?.value || "").trim().toLowerCase();
-  // magic word you choose:
-  if(val === "shuttumani" || val === "sutu" || val === "marryme"){
+  const v = document.getElementById("secretInput").value.trim().toLowerCase();
+
+  if(v === "ammede ponnu njana"){
     document.getElementById("secretModal").style.display = "block";
   } else {
-    alert("Wrong secret 😌 Try again");
+    alert("Not the magic word 💔");
   }
 }
 
