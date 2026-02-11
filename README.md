@@ -2,150 +2,83 @@ index.html
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<title>Private ❤️</title>
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>For My Suttumani ❤️</title>
+    <style>
+        body, html {
+            margin: 0; padding: 0;
+            font-family: 'Poppins', sans-serif;
+            background-color: #fff0f3;
+            height: 100vh;
+            overflow: hidden;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
 
-<style>
-body{
-  margin:0;
-  font-family:'Segoe UI',sans-serif;
-  background:linear-gradient(135deg,#ff9a9e,#fad0c4);
-  overflow:hidden;
-}
+        /* --- LOCK SCREEN (Step 1) --- */
+        #lock-screen {
+            position: fixed; width: 100%; height: 100%;
+            background: white; z-index: 1000;
+            display: flex; flex-direction: column;
+            justify-content: center; align-items: center;
+        }
+        #lock-screen input {
+            padding: 15px; font-size: 1.2rem;
+            border: 2px solid #ff4d6d; border-radius: 50px;
+            text-align: center; outline: none; width: 250px;
+        }
 
-/* LOCK SCREEN */
-#lockScreen{
-  position:fixed;
-  inset:0;
-  display:flex;
-  flex-direction:column;
-  justify-content:center;
-  align-items:center;
-  color:white;
-  text-align:center;
-}
+        /* --- POPUP MESSAGE (Step 2) --- */
+        #popup-msg {
+            display: none; position: fixed; top: 0; left: 0;
+            width: 100%; height: 100%; background: white;
+            z-index: 2000; justify-content: center; align-items: center;
+            font-size: 2.2rem; color: #ff4d6d; font-weight: bold;
+            text-align: center; padding: 20px;
+        }
 
-#lockScreen h1{
-  font-size:26px;
-  margin-bottom:20px;
-}
-
-#lockScreen input{
-  padding:12px;
-  width:250px;
-  border-radius:25px;
-  border:none;
-  text-align:center;
-  font-size:16px;
-}
-
-#lockScreen button{
-  margin-top:15px;
-  padding:10px 30px;
-  border:none;
-  border-radius:25px;
-  background:#e63946;
-  color:white;
-  font-size:16px;
-  cursor:pointer;
-}
-
-/* POPUP */
-#popup{
-  position:fixed;
-  inset:0;
-  background:rgba(0,0,0,0.6);
-  display:none;
-  justify-content:center;
-  align-items:center;
-  color:white;
-  font-size:24px;
-  text-align:center;
-  z-index:10;
-}
-
-/* LETTER */
-#letterPage{
-  display:none;
-  background:linear-gradient(135deg,#ffdde1,#ee9ca7);
-  min-height:100vh;
-  padding:30px;
-}
-
-.letter-box{
-  background:white;
-  border-radius:20px;
-  padding:25px;
-  max-width:900px;
-  margin:auto;
-  box-shadow:0 15px 40px rgba(0,0,0,0.2);
-}
-
-h2{
-  text-align:center;
-  color:#e63946;
-}
-
-.letter-text{
-  white-space:pre-wrap;
-  line-height:1.8;
-  color:#333;
-}
-</style>
+        #main-content { display: none; }
+    </style>
 </head>
-
 <body>
 
-<!-- LOCK SCREEN -->
-<div id="lockScreen">
-  <h1>🔒 Private Page</h1>
-  <p>Enter the magic words 💋</p>
-  <input id="password" placeholder="01032025" />
-  <button onclick="unlock()">Unlock ❤️</button>
-</div>
-
-<!-- POPUP -->
-<div id="popup">
-  ammede ponnu araaa 💋💋
-</div>
-
-<!-- LETTER PAGE -->
-<div id="letterPage">
-  <div class="letter-box">
-    <h2>Happy Valentine’s Day ❤️</h2>
-
-    <div class="letter-text">
-eth nee appozha vayika ennu arayillla Appozhayalum vayikulooo ninthe first Valentine's Day annu ennu okke ariyaaa nee annu tution nu varo ennu polum arayilla ethu Azhuthumbo pinne ollathu exam okke alle ath Kazhinja kanan polum pattillalo appo enth cheyyum nee vallathum aloichu vechit indooo vaveee enthe oru idea il korach okkee indu ath Njan parayaneee pinne kali akkanda ketta Njan romantic alla ennu paranju nee enthe eduth ethuuu matte parayana oru dhivasam varum daaaa nokkikooo pinne entha sugalle engane okke nadanna mathiyooo vellapozhum enne kurich okke ortholu tta marannu povaruthu nammal mindandu aya entha indava ponnah enthayalum nammal kanum enganelum okke enthelum mindum athokke orapa pinne ammede ponnu aradaaaa 😘🩷❤️💋🫂 exam kazhinju graduation nu enthavavo kalikan poovanel ninak ath scn avum ennu enik ariyaaaaa bhaki Allavarum adipoli ayit avide erikumbo enthe ponnu matharam blaa blaaa blaaaa enthaleeeee nja. Avide annelum ninthe thanne alledaaaaaa enthokke aleeeeee eni korach serious ayit paraya
-
-Atheeee enik ninne bhayankara ishtam a neee yes parayo ennu arayilla ennalum enik entho parayanam ennu thooni neee Chilappo enne angane kandit undavilla ennalum Njan eth eni paranjillel eni annelum eth parayumbo annu paranjel Njan yes paranjene ennu nee Paranja enik veshamam avummm atha eppo parayane enik ninne bhayankara ishtam a "I Love You❤️"
-
-Nee ethinu rply thannolu Chilappo eth kelkumbo nee ennod eni mindi ennu varilla angane onnum venda tta ishtam allel ath Paranja mathi scn ella eppo ishtam annu paranju ennu vech kozhapam ellata nammal pazhayath pole thanne veliya vethasam onnum ella nammal thammil ethra kollam ayit ariyaaa pinne angotum engotum ariyathathu onnum ellanu vekkanu Ninak enne ishtam anno ennu arayilla eni eth parayumbozhano athine kurich aloikane ennu polum arayilla enth okke annelum neee enthe koode indel adipoli avum ennu thooni athokke thanne prethekish onnum ella ethokke thanne appo aloichu okke paranjolu tta
-
-Appo veendum paraya  
-I LOVE YOU ❤️
+    <div id="lock-screen">
+        <h2>Enter Code ❤️</h2>
+        <input type="password" id="passInput" placeholder="DDMMYYYY" oninput="checkPassword()">
     </div>
-  </div>
-</div>
 
-<script>
-function unlock(){
-  const pass = document.getElementById("password").value.trim();
-  if(pass === "ammede ponnu araaa💋💋"){
-    document.getElementById("popup").style.display="flex";
-    setTimeout(()=>{
-      document.getElementById("popup").style.display="none";
-      document.getElementById("lockScreen").style.display="none";
-      document.getElementById("letterPage").style.display="block";
-    },2000);
-  }else{
-    alert("Wrong magic words 😝");
-  }
-}
-</script>
+    <div id="popup-msg">ammede ponnu araaa💋💋</div>
 
+    <div id="main-content">
+        <h1>Site Loaded</h1>
+    </div>
+
+    <audio id="bgMusic" loop>
+        <source src="music.mp3" type="audio/mpeg">
+    </audio>
+
+    <script>
+        function checkPassword() {
+            const input = document.getElementById('passInput').value;
+            // The password check
+            if (input === "01032025") {
+                document.getElementById('lock-screen').style.display = 'none';
+                const popup = document.getElementById('popup-msg');
+                popup.style.display = 'flex';
+                
+                // Play music
+                const music = document.getElementById('bgMusic');
+                music.play().catch(()=>{});
+                
+                // Show popup for 3 seconds then load content
+                setTimeout(() => {
+                    popup.style.display = 'none';
+                    document.getElementById('main-content').style.display = 'block';
+                }, 3000);
+            }
+        }
+    </script>
 </body>
 </html>
-
-
-
