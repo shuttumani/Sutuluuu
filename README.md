@@ -7,155 +7,35 @@ index.html
 <title>Shuttumani</title>
 
 <style>
-  body{
-    margin:0;
-    background:#000;
-    color:#fff;
-    font-family:Arial, sans-serif;
-    overflow:hidden;
-    text-align:center;
-  }
+  body{margin:0;background:#000;color:#fff;font-family:Arial,sans-serif;overflow:hidden;text-align:center;}
+  .page{position:fixed;inset:0;display:none;padding:20px;box-sizing:border-box;}
+  .page.active{display:block;}
+  .center{height:100%;display:flex;flex-direction:column;justify-content:center;align-items:center;gap:12px;}
 
-  /* Pages: only one visible */
-  .page{
-    position:fixed;
-    inset:0;
-    display:none;
-    padding:20px;
-    box-sizing:border-box;
-    z-index:2;
-  }
-  .page.active{ display:block; }
+  button{padding:14px 22px;font-size:18px;border:none;border-radius:12px;background:#ff4da6;color:#fff;}
+  .btnDark{background:#222;}
 
-  /* Center helper for envelope */
-  .center{
-    height:100%;
-    display:flex;
-    flex-direction:column;
-    justify-content:center;
-    align-items:center;
-    gap:12px;
-  }
+  input{padding:14px;font-size:18px;border-radius:10px;border:none;text-align:center;width:min(320px,85vw);}
 
-  button{
-    padding:14px 22px;
-    font-size:18px;
-    border:none;
-    border-radius:12px;
-    background:#ff4da6;
-    color:#fff;
-  }
-  .btnDark{ background:#222; }
+  .scrollPage{overflow-y:auto;-webkit-overflow-scrolling:touch;}
 
-  /* Floating hearts */
-  .heart{
-    position:fixed;
-    bottom:-10px;
-    font-size:20px;
-    animation: floatUp 5s linear infinite;
-    opacity:0.7;
-    pointer-events:none;
-    z-index:1;
-  }
-  @keyframes floatUp{
-    0%{transform:translateY(0);}
-    100%{transform:translateY(-110vh);}
-  }
+  .card{max-width:720px;margin:0 auto;text-align:left;line-height:1.7;font-size:17px;background:#0f0f0f;border-radius:14px;padding:18px;}
+  .title{margin:10px 0 14px;text-align:center;}
+  .countBox{max-width:720px;margin:18px auto 0;text-align:left;line-height:1.9;font-size:15px;background:#0f0f0f;border-radius:14px;padding:16px;}
+  .timer{font-size:18px;margin:10px 0 0;opacity:.95;}
 
-  /* Scroll pages */
-  .scrollPage{
-    overflow-y:auto;
-    -webkit-overflow-scrolling:touch;
-  }
+  /* hearts */
+  .heart{position:fixed;bottom:-10px;font-size:20px;animation:floatUp 5s linear infinite;opacity:.7;pointer-events:none;z-index:1;}
+  @keyframes floatUp{0%{transform:translateY(0);}100%{transform:translateY(-110vh);} }
 
-  .card{
-    max-width:720px;
-    margin:0 auto;
-    text-align:left;
-    line-height:1.7;
-    font-size:17px;
-    background:#0f0f0f;
-    border-radius:14px;
-    padding:18px;
-  }
-
-  .title{
-    margin:10px 0 14px;
-    text-align:center;
-  }
-
-  .countBox{
-    max-width:720px;
-    margin:18px auto 0;
-    text-align:left;
-    line-height:1.9;
-    font-size:15px;
-    background:#0f0f0f;
-    border-radius:14px;
-    padding:16px;
-  }
-
-  .timer{
-    font-size:18px;
-    margin:10px 0 0;
-    opacity:.95;
-  }
-
-  /* Envelope */
-  .newEnvelope{
-    position:relative;
-    width:260px;
-    height:170px;
-    cursor:pointer;
-    margin-top:10px;
-    user-select:none;
-    -webkit-tap-highlight-color: transparent;
-  }
-
-  .newEnvelope .body{
-    position:absolute;
-    inset:0;
-    background:#d6336c;
-    border-radius:12px;
-    box-shadow:0 10px 30px rgba(0,0,0,0.4);
-    z-index:1;
-  }
-
-  .newEnvelope .topFlap{
-    position:absolute;
-    top:0;
-    left:0;
-    width:0;
-    height:0;
-    border-left:130px solid transparent;
-    border-right:130px solid transparent;
-    border-top:85px solid #ff6b9e;
-    transform-origin:top;
-    transition:transform 0.8s ease;
-    z-index:3;
-  }
-
-  .newEnvelope .paper{
-    position:absolute;
-    top:20px;
-    left:10px;
-    right:10px;
-    bottom:10px;
-    background:#fff0f6;
-    border-radius:10px;
-    display:flex;
-    justify-content:center;
-    align-items:center;
-    font-size:28px;
-    color:#d6336c;
-    transform:translateY(40px);
-    transition:transform 0.8s ease;
-    z-index:2;
-  }
-
-  .newEnvelope.open .topFlap{ transform:rotateX(180deg); }
-  .newEnvelope.open .paper{ transform:translateY(-20px); }
-
+  /* Envelope tap-safe */
+  .newEnvelope{position:relative;width:260px;height:170px;cursor:pointer;margin-top:10px;user-select:none;-webkit-tap-highlight-color:transparent;}
+  .newEnvelope *{pointer-events:none;} /* IMPORTANT: tap anywhere works */
+  .newEnvelope .body{position:absolute;inset:0;background:#d6336c;border-radius:12px;box-shadow:0 10px 30px rgba(0,0,0,.4);z-index:1;}
+  .newEnvelope .topFlap{position:absolute;top:0;left:0;width:0;height:0;border-left:130px solid transparent;border-right:130px solid transparent;border-top:85px solid #ff6b9e;transform-origin:top;transition:transform .8s ease;z-index:3;}
+  .newEnvelope .paper{position:absolute;top:20px;left:10px;right:10px;bottom:10px;background:#fff0f6;border-radius:10px;display:flex;justify-content:center;align-items:center;font-size:28px;color:#d6336c;transform:translateY(40px);transition:transform .8s ease;z-index:2;}
+  .newEnvelope.open .topFlap{transform:rotateX(180deg);}
+  .newEnvelope.open .paper{transform:translateY(-20px);}
 </style>
 </head>
 
@@ -164,26 +44,31 @@ index.html
 <audio id="bgMusic" loop>
   <source src="music.mp3" type="audio/mpeg" />
 </audio>
-
-<!-- ENVELOPE PAGE (FIRST) -->
-<div id="envelopePage" class="page active">
+<div id="lockPage" class="page active">
   <div class="center">
-    <h1 style="margin:0;color:#3aa0ff;">shuttumani 💋</h1>
-    <hr style="width:min(520px,90vw);border:0;border-top:1px solid #444;margin:8px 0 14px;">
+    <h1>shuttumani 💋</h1>
+    <div style="opacity:.85;">“ammede ponnu araaa 💋💋”</div>
 
+    <input id="passwordInput" type="password" placeholder="Enter date"
+      inputmode="numeric" autocomplete="off"
+      onkeydown="if(event.key==='Enter'){ checkPassword(); }">
+
+    <button type="button" onclick="checkPassword()">Unlock</button>
+  </div>
+</div>
+<div id="envelopePage" class="page">
+  <div class="center">
     <h2 style="margin:0 0 8px;">Love Letter 💌</h2>
 
-    <div class="newEnvelope" id="envelopeBtn">
+    <div class="newEnvelope" onclick="openLetter()">
       <div class="topFlap"></div>
       <div class="body"></div>
       <div class="paper">💖</div>
     </div>
 
-    <p style="opacity:0.8;margin:8px 0 0;">Tap the envelope to open 💌</p>
+    <p style="opacity:.8;margin:8px 0 0;">Tap the envelope to open 💌</p>
   </div>
 </div>
-
-<!-- LETTER PAGE -->
 <div id="letterPage" class="page scrollPage">
   <h2 class="title">For You ❤️</h2>
 
@@ -202,21 +87,19 @@ index.html
     <button class="btnDark" onclick="show('envelopePage')">Back 💌</button>
   </div>
 </div>
-
-<!-- COUNTDOWN PAGE -->
 <div id="countdownPage" class="page scrollPage">
   <h2 class="title" style="color:#ff4d88;">We committed on</h2>
   <h1 style="margin:0 0 6px;">01 • 03 • 2025 💖</h1>
   <div id="countdownTimer" class="timer"></div>
 
   <div class="countBox">
-    <p>💗 01-03-2025 — The Day We Became “Us”
+    <p>💗 01-03-2025 — The Day We Became “Us”  
     This was not just a date on the calendar. This was the day feelings turned into something real. The day we stopped standing on two different sides and slowly started walking in the same direction. From this day, your happiness became my peace, your sadness became my concern, and your presence became my comfort. 01-03-2025 is not just when we committed… it is the day my heart officially chose you.</p>
 
-    <p>💗 05-06-2023 — The First Time I Saw You
+    <p>💗 05-06-2023 — The First Time I Saw You  
     I still don’t know if you noticed me that day in tuition class… but I remember noticing you. Maybe it was just another normal day for the world, but for me, it quietly became special. I didn’t know that the girl sitting there would later become someone who would change my thoughts, my feelings, and my future. That first sight was simple… but it was the beginning of everything.</p>
 
-    <p>💗 20-07-2010 — The Day the World Became Beautiful
+    <p>💗 20-07-2010 — The Day the World Became Beautiful  
     Long before I knew you… before tuition, before conversations, before feelings… this was the day you came into this world. And I sometimes think how lucky this world is to have you in it. Because without this day, there would be no smiles from you, no talks with you, no “us.” 20-07-2010 is special not just because you were born… but because that’s the day the person I would one day love started her journey.</p>
   </div>
 
@@ -225,8 +108,6 @@ index.html
     <button class="btnDark" onclick="show('letterPage')">Back ❤️</button>
   </div>
 </div>
-
-<!-- DIARY PAGE -->
 <div id="diaryPage" class="page scrollPage">
   <h2 class="title" style="color:#ff4d88;">Daily Diary 📖</h2>
 
@@ -247,7 +128,6 @@ index.html
   </div>
 </div>
 
-<!-- OPTIONS HUB -->
 <div id="optionsPage" class="page scrollPage">
   <h2 class="title" style="color:#ff4d88;">Our World 🌙💗</h2>
 
@@ -266,130 +146,83 @@ index.html
   </div>
 </div>
 
-<!-- OUR TIME PAGE -->
 <div id="ourTimePage" class="page scrollPage">
   <h2 class="title" style="color:#ff4d88;">Our Time 📸</h2>
-
   <div class="card">
-    <p style="margin-top:0;">
-      This page is for our photos… little moments, silly selfies, random clicks — everything that feels like “us”.
-    </p>
-    <p style="opacity:.85;">
-      📌 You can add photos later. (Next step we’ll add a gallery grid.)
-    </p>
-
-    <div style="display:flex;gap:10px;justify-content:center;flex-wrap:wrap;margin-top:16px;">
-      <button class="btnDark" onclick="show('optionsPage')">Back 🌙</button>
-    </div>
+    <p style="margin-top:0;">Here we will add our photos later (gallery).</p>
+    <button class="btnDark" onclick="show('optionsPage')">Back 🌙</button>
   </div>
 </div>
 
-<!-- MEMORIES PAGE -->
 <div id="memoriesPage" class="page scrollPage">
   <h2 class="title" style="color:#ff4d88;">Memories 🪵</h2>
-
   <div class="card">
-    <p style="margin-top:0;">
-      I still remember those tuition days… that long wooden bench and the long table.
-      Sitting close, pretending it’s normal — but my heart was shouting.
-      Even the smallest touch felt like a whole story.
-    </p>
-
-    <p>
-      And those secret talks… the staircase to the second floor…
-      where we acted like strangers in front of everyone,
-      but inside, we were building our own little world quietly.
-    </p>
-
-    <p style="opacity:.9;">
-      Some places become memories not because of the place…
-      but because YOU were there.
-    </p>
-
-    <div style="display:flex;gap:10px;justify-content:center;flex-wrap:wrap;margin-top:16px;">
-      <button class="btnDark" onclick="show('optionsPage')">Back 🌙</button>
-    </div>
+    <p style="margin-top:0;">Tuition bench memories + staircase secret talks will be animated in next steps.</p>
+    <button class="btnDark" onclick="show('optionsPage')">Back 🌙</button>
   </div>
 </div>
 
-<!-- ONE DAY PAGE -->
 <div id="oneDayPage" class="page scrollPage">
   <h2 class="title" style="color:#ff4d88;">One Day 💍</h2>
-
   <div class="card">
-    <p style="margin-top:0;">
-      One day… not in a rush, not in a dream — in real life…
-      I want a peaceful home where your laugh is the loudest sound.
-    </p>
-
-    <p>
-      I want to hold your hand in crowds and still feel like it’s only us.
-      Morning tea, small fights, silly jokes, planning trips,
-      and coming back to the same comfort — you.
-    </p>
-
-    <p style="opacity:.9;">
-      I don’t want a perfect life… I want a life with you.
-    </p>
-
-    <div style="display:flex;gap:10px;justify-content:center;flex-wrap:wrap;margin-top:16px;">
-      <button class="btnDark" onclick="show('optionsPage')">Back 🌙</button>
-    </div>
+    <p style="margin-top:0;">Marriage/future life animations will be added in next steps.</p>
+    <button class="btnDark" onclick="show('optionsPage')">Back 🌙</button>
   </div>
 </div>
-
 <script>
-  function show(pageId){
-    document.querySelectorAll('.page').forEach(p=>p.classList.remove('active'));
-    const page = document.getElementById(pageId);
-    if(page) page.classList.add('active');
-    window.scrollTo(0,0);
+function show(pageId){
+  document.querySelectorAll('.page').forEach(p=>p.classList.remove('active'));
+  const page = document.getElementById(pageId);
+  if(!page){ alert("Missing page: " + pageId); return; }
+  page.classList.add('active');
+  window.scrollTo(0,0);
+}
+
+function checkPassword(){
+  const raw = document.getElementById("passwordInput").value || "";
+  const entered = raw.replace(/\D/g,""); // allows 01-03-2025 too
+  if(entered === "01032025"){
+    const music = document.getElementById("bgMusic");
+    if(music) music.play().catch(()=>{});
+    show("envelopePage");
+  } else {
+    alert("Wrong date 💔");
   }
+}
 
-  // Envelope open (works on all mobiles)
-  function openLetter(){
-    const env = document.getElementById("envelopeBtn");
-    if(env) env.classList.add("open");
-    setTimeout(() => show("letterPage"), 850);
-  }
+function openLetter(){
+  const env = document.querySelector(".newEnvelope");
+  if(env) env.classList.add("open");
+  setTimeout(()=>show("letterPage"), 850);
+}
 
-  // Attach click safely
-  document.getElementById("envelopeBtn").addEventListener("click", openLetter);
+function openGoogleForm(){
+  window.open("https://docs.google.com/forms/d/e/1FAIpQLSc1JncNbHTVKlZooN4NaDi_Ov08J6Q1g-v5PMHlNnZ_mcGp6A/viewform?usp=dialog","_blank");
+}
 
-  // Google Form open (direct link)
-  function openGoogleForm(){
-    window.open(
-      "https://docs.google.com/forms/d/e/1FAIpQLSc1JncNbHTVKlZooN4NaDi_Ov08J6Q1g-v5PMHlNnZ_mcGp6A/viewform?usp=dialog",
-      "_blank"
-    );
-  }
+// Hearts
+setInterval(()=>{
+  const heart=document.createElement("div");
+  heart.className="heart";
+  heart.innerHTML="❤️";
+  heart.style.left=Math.random()*100+"%";
+  document.body.appendChild(heart);
+  setTimeout(()=>heart.remove(),5000);
+},800);
 
-  // hearts
-  setInterval(function(){
-    const heart=document.createElement("div");
-    heart.className="heart";
-    heart.innerHTML="❤️";
-    heart.style.left=Math.random()*100+"%";
-    document.body.appendChild(heart);
-    setTimeout(()=>heart.remove(),5000);
-  },800);
-
-  // countdown since 01-03-2025
-  (function startCountdown(){
-    const target = new Date("2025-03-01T00:00:00").getTime();
-    setInterval(() => {
-      const now = Date.now();
-      const diff = now - target;
-
-      const days = Math.floor(diff / (1000*60*60*24));
-      const hours = Math.floor((diff % (1000*60*60*24)) / (1000*60*60));
-      const mins = Math.floor((diff % (1000*60*60)) / (1000*60));
-      const secs = Math.floor((diff % (1000*60)) / 1000);
-
-      const el = document.getElementById("countdownTimer");
-      if(el) el.innerHTML = `${days} days 💕 ${hours} hrs 💕 ${mins} mins 💕 ${secs} sec together`;
-    }, 1000);
-  })();
+// Countdown since 01-03-2025
+(function(){
+  const target = new Date("2025-03-01T00:00:00").getTime();
+  setInterval(()=>{
+    const diff = Date.now() - target;
+    const days = Math.floor(diff / (1000*60*60*24));
+    const hours = Math.floor((diff % (1000*60*60*24)) / (1000*60*60));
+    const mins = Math.floor((diff % (1000*60*60)) / (1000*60));
+    const secs = Math.floor((diff % (1000*60)) / 1000);
+    const el = document.getElementById("countdownTimer");
+    if(el) el.innerHTML = `${days} days 💕 ${hours} hrs 💕 ${mins} mins 💕 ${secs} sec together`;
+  },1000);
+})();
 </script>
 
 </body>
