@@ -332,6 +332,100 @@ index.html
     </p>
   </div>
 </div>
+<!-- OPTIONS HUB -->
+<div id="optionsPage" class="page scrollPage">
+  <h2 class="title" style="color:#ff4d88;">Our World 🌙💗</h2>
+
+  <div class="card" style="text-align:center;">
+    <p style="opacity:.9;margin-top:0;">Choose one…</p>
+
+    <div style="display:flex;flex-direction:column;gap:12px;max-width:420px;margin:0 auto;">
+      <button onclick="show('ourTimePage')">Our Time 📸</button>
+      <button onclick="show('memoriesPage')">Memories 🪵</button>
+      <button onclick="show('oneDayPage')">One Day 💍</button>
+    </div>
+
+    <div style="margin-top:18px;">
+      <button class="btnDark" onclick="show('diaryPage')">Back 📖</button>
+    </div>
+  </div>
+</div>
+
+<!-- OUR TIME PAGE -->
+<div id="ourTimePage" class="page scrollPage">
+  <h2 class="title" style="color:#ff4d88;">Our Time 📸</h2>
+
+  <div class="card">
+    <p style="margin-top:0;">
+      This page is for our photos… little moments, silly selfies, random clicks — everything that feels like “us”.
+    </p>
+
+    <p style="opacity:.85;">
+      📌 For now: you will add photos later.  
+      (Next step we will add a simple photo gallery grid.)
+    </p>
+
+    <div style="display:flex;gap:10px;justify-content:center;flex-wrap:wrap;margin-top:16px;">
+  <button onclick="show('replyPage')">Reply Today 💌</button>
+  <button onclick="show('optionsPage')">Our World 🌙</button>
+  <button class="btnDark" onclick="show('countdownPage')">Back ❤️</button>
+</div>
+</div>
+
+<!-- MEMORIES PAGE -->
+<div id="memoriesPage" class="page scrollPage">
+  <h2 class="title" style="color:#ff4d88;">Memories 🪵</h2>
+
+  <div class="card">
+    <p style="margin-top:0;">
+      I still remember those tuition days… that long wooden bench and the long table.
+      Sitting close, pretending it’s normal — but my heart was shouting.
+      Even the smallest touch felt like a whole story.
+    </p>
+
+    <p>
+      And those secret talks… the staircase to the second floor…
+      where we acted like strangers in front of everyone,
+      but inside, we were building our own little world quietly.
+    </p>
+
+    <p style="opacity:.9;">
+      Some places become memories not because of the place…
+      but because YOU were there.
+    </p>
+
+    <div style="display:flex;gap:10px;justify-content:center;flex-wrap:wrap;margin-top:16px;">
+      <button class="btnDark" onclick="show('optionsPage')">Back 🌙</button>
+    </div>
+  </div>
+</div>
+
+<!-- ONE DAY PAGE -->
+<div id="oneDayPage" class="page scrollPage">
+  <h2 class="title" style="color:#ff4d88;">One Day 💍</h2>
+
+  <div class="card">
+    <p style="margin-top:0;">
+      One day… not in a rush, not in a dream — in real life…
+      I want a peaceful home where your laugh is the loudest sound.
+    </p>
+
+    <p>
+      I want to hold your hand in crowds and still feel like it’s only us.
+      Morning tea, small fights, silly jokes, planning trips,
+      and coming back to the same comfort — you.
+    </p>
+
+    <p style="opacity:.9;">
+      I don’t want a perfect life…  
+      I want a life with you.
+    </p>
+
+    <div style="display:flex;gap:10px;justify-content:center;flex-wrap:wrap;margin-top:16px;">
+      <button class="btnDark" onclick="show('optionsPage')">Back 🌙</button>
+    </div>
+  </div>
+</div>
 <script>
   function show(pageId){
     document.querySelectorAll('.page').forEach(p=>p.classList.remove('active'));
