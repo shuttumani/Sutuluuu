@@ -292,6 +292,471 @@ index.html
   line-height:1.9;
   opacity:.95;
           }
+  /* Surprise Page */
+.surpriseBox{
+  max-width:900px;
+  margin:0 auto;
+  background:#0f0f0f;
+  border:1px solid #222;
+  border-radius:16px;
+  padding:18px;
+  text-align:center;
+}
+
+.gift{
+  font-size:64px;
+  cursor:pointer;
+  user-select:none;
+  -webkit-tap-highlight-color: transparent;
+  animation:giftBounce 1.6s ease-in-out infinite;
+}
+
+@keyframes giftBounce{
+  0%,100%{transform:translateY(0);}
+  50%{transform:translateY(-10px);}
+}
+
+.revealText{
+  display:none;
+  margin-top:16px;
+  padding:14px;
+  background:#111;
+  border-radius:12px;
+  border:1px solid #222;
+  line-height:1.8;
+  opacity:.95;
+  text-align:left;
+}
+
+.sparkle{
+  font-size:22px;
+  text-align:center;
+  margin:8px 0;
+  opacity:.95;
+}
+
+.loveRow{
+  display:flex;
+  flex-wrap:wrap;
+  justify-content:center;
+  gap:10px;
+  margin-top:12px;
+}
+
+.loveChip{
+  background:#111;
+  border:1px solid #2a2a2a;
+  padding:8px 12px;
+  border-radius:999px;
+  font-size:14px;
+  opacity:.9;
+}
+  /* ===== CINEMATIC SURPRISE (BIG) ===== */
+.surpriseHero{
+  position:relative;
+  overflow:hidden;
+  padding-bottom:30px;
+}
+
+.aurora{
+  position:absolute; inset:-40px;
+  background:
+    radial-gradient(circle at 15% 20%, rgba(255,77,136,.18), transparent 55%),
+    radial-gradient(circle at 85% 25%, rgba(58,160,255,.14), transparent 58%),
+    radial-gradient(circle at 50% 80%, rgba(255,255,255,.06), transparent 60%),
+    radial-gradient(circle at 30% 70%, rgba(255,77,136,.10), transparent 55%),
+    radial-gradient(circle at 70% 65%, rgba(58,160,255,.10), transparent 55%);
+  filter: blur(12px) saturate(1.2);
+  animation: auroraMove 8s ease-in-out infinite;
+  pointer-events:none;
+  z-index:0;
+}
+@keyframes auroraMove{
+  0%,100%{transform:translateY(0) scale(1);}
+  50%{transform:translateY(18px) scale(1.03);}
+}
+
+.starfield{
+  position:absolute; inset:0;
+  background:
+    radial-gradient(circle at 10% 30%, rgba(255,255,255,.22), transparent 35%),
+    radial-gradient(circle at 20% 80%, rgba(255,255,255,.14), transparent 40%),
+    radial-gradient(circle at 70% 20%, rgba(255,255,255,.18), transparent 45%),
+    radial-gradient(circle at 85% 60%, rgba(255,255,255,.12), transparent 42%),
+    radial-gradient(circle at 55% 55%, rgba(255,255,255,.08), transparent 50%);
+  opacity:.9;
+  animation: starDrift 10s ease-in-out infinite;
+  pointer-events:none;
+  z-index:1;
+}
+@keyframes starDrift{
+  0%,100%{transform:translateY(0);}
+  50%{transform:translateY(10px);}
+}
+
+.orb{
+  position:absolute;
+  width:220px; height:220px;
+  border-radius:50%;
+  background: radial-gradient(circle, rgba(255,77,136,.18), transparent 65%);
+  filter: blur(1px);
+  opacity:.7;
+  animation: orbFloat 7s ease-in-out infinite;
+  pointer-events:none;
+  z-index:1;
+}
+.orb.o1{left:-40px; top:120px;}
+.orb.o2{right:-60px; top:220px; background: radial-gradient(circle, rgba(58,160,255,.16), transparent 65%); animation-delay:.6s;}
+.orb.o3{left:40%; bottom:-90px; width:260px; height:260px; background: radial-gradient(circle, rgba(255,255,255,.08), transparent 70%); animation-delay:1.2s;}
+
+@keyframes orbFloat{
+  0%,100%{transform:translateY(0) scale(1);}
+  50%{transform:translateY(-18px) scale(1.04);}
+}
+
+.heroCard{
+  width:min(900px, 92vw);
+  margin:0 auto;
+  border-radius:20px;
+  border:1px solid rgba(255,77,136,.22);
+  background:
+    radial-gradient(circle at 50% 10%, rgba(255,77,136,.12), transparent 60%),
+    radial-gradient(circle at 70% 80%, rgba(58,160,255,.08), transparent 55%),
+    #0f0f0f;
+  box-shadow: 0 0 50px rgba(255,77,136,.10);
+  padding:18px;
+  position:relative;
+  z-index:2;
+}
+
+.bigTitle{
+  margin:6px 0 4px;
+  font-size:26px;
+  color:#ff4d88;
+  letter-spacing:.3px;
+}
+
+.subText{
+  opacity:.9;
+  margin:0;
+  line-height:1.65;
+}
+
+.giftStage{
+  margin:18px auto 6px;
+  width:220px;
+  height:220px;
+  position:relative;
+  perspective: 900px;
+}
+
+.gift3d{
+  position:absolute;
+  inset:0;
+  display:grid;
+  place-items:center;
+  font-size:88px;
+  cursor:pointer;
+  user-select:none;
+  -webkit-tap-highlight-color: transparent;
+  transform-style:preserve-3d;
+  animation: giftHover 2.4s ease-in-out infinite;
+  filter: drop-shadow(0 14px 24px rgba(0,0,0,.45));
+}
+@keyframes giftHover{
+  0%,100%{transform:translateY(0) rotateX(6deg) rotateZ(-2deg);}
+  50%{transform:translateY(-12px) rotateX(10deg) rotateZ(2deg);}
+}
+.gift3d.open{
+  animation:none;
+  transform: translateY(-6px) rotateX(30deg) rotateZ(0deg) scale(1.02);
+}
+
+.hint{
+  opacity:.8;
+  margin:6px 0 0;
+  font-size:14px;
+}
+
+.secretLink{
+  margin-top:12px;
+  display:inline-block;
+  font-size:13px;
+  opacity:.75;
+  text-decoration:underline;
+  cursor:pointer;
+}
+
+/* ===== FULLSCREEN CINEMATIC MODAL ===== */
+.modal{
+  position:fixed;
+  inset:0;
+  display:none;
+  z-index:9998;
+}
+.modal.show{display:block;}
+
+.modalBg{
+  position:absolute;
+  inset:0;
+  background:rgba(0,0,0,.68);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+}
+
+.modalPanel{
+  position:absolute;
+  left:50%;
+  top:50%;
+  transform:translate(-50%,-50%);
+  width:min(920px, 92vw);
+  max-height:86vh;
+  overflow:auto;
+  border-radius:22px;
+  border:1px solid rgba(255,77,136,.25);
+  background:
+    radial-gradient(circle at 20% 10%, rgba(255,77,136,.18), transparent 55%),
+    radial-gradient(circle at 80% 20%, rgba(58,160,255,.12), transparent 58%),
+    #0f0f0f;
+  box-shadow: 0 30px 80px rgba(0,0,0,.55);
+  padding:18px 16px 16px;
+}
+
+.modalTop{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  gap:10px;
+  margin-bottom:10px;
+}
+.closeBtn{
+  background:#222;
+  border:1px solid #333;
+  color:#fff;
+  border-radius:999px;
+  padding:10px 14px;
+  font-size:14px;
+}
+
+.typeBox{
+  border:1px solid #222;
+  background:#111;
+  border-radius:16px;
+  padding:14px;
+  line-height:1.9;
+  text-align:left;
+  opacity:.96;
+}
+.cursor{
+  display:inline-block;
+  margin-left:4px;
+  width:10px;
+  animation: blink .8s infinite;
+}
+@keyframes blink{0%,100%{opacity:0;}50%{opacity:1;}}
+
+.promiseGrid{
+  display:grid;
+  grid-template-columns:1fr;
+  gap:10px;
+  margin-top:12px;
+}
+@media (min-width:720px){
+  .promiseGrid{grid-template-columns:1fr 1fr;}
+}
+.promiseCard{
+  background:#0f0f0f;
+  border:1px solid #222;
+  border-radius:16px;
+  padding:12px 14px;
+  line-height:1.75;
+}
+.badge{
+  display:inline-block;
+  padding:6px 10px;
+  border-radius:999px;
+  background:#111;
+  border:1px solid #2a2a2a;
+  font-size:13px;
+  opacity:.9;
+  margin-bottom:8px;
+}
+.promiseCard b{color:#ff4d88;}
+
+.finalLine{
+  text-align:center;
+  margin-top:14px;
+  font-size:16px;
+  opacity:.95;
+}
+
+/* confetti hearts */
+.confetti{
+  position:fixed;
+  top:-30px;
+  z-index:9999;
+  pointer-events:none;
+  animation: fall linear forwards;
+  opacity:.9;
+  white-space:nowrap;
+}
+@keyframes fall{
+  from{transform:translateY(-40px) rotate(0deg);}
+  to{transform:translateY(110vh) rotate(360deg);}
+    }
+/* ===== STEP 10 FINAL BEAUTY ===== */
+.finalWrap{
+  max-width:900px;
+  margin:0 auto;
+  padding:14px 0 40px;
+  text-align:center;
+}
+
+.finalTitle{
+  margin:8px 0 6px;
+  font-size:28px;
+  letter-spacing:0.5px;
+  color:#ff4da6;
+  text-shadow:0 0 18px rgba(255,77,166,.25);
+}
+
+.finalSub{
+  margin:0 auto 14px;
+  max-width:720px;
+  opacity:.9;
+  line-height:1.6;
+}
+
+.finalCard{
+  max-width:780px;
+  margin:0 auto;
+  padding:18px;
+  border-radius:18px;
+  background:linear-gradient(180deg, rgba(255,77,166,.10), rgba(255,255,255,.02));
+  border:1px solid rgba(255,77,166,.18);
+  box-shadow:0 12px 40px rgba(0,0,0,.5);
+}
+
+.typeLine{
+  min-height:28px;
+  font-size:18px;
+  opacity:.95;
+  padding:8px 10px;
+  border-radius:12px;
+  background:rgba(0,0,0,.35);
+  border:1px solid rgba(255,255,255,.06);
+}
+
+.dividerGlow{
+  height:1px;
+  margin:14px 0;
+  background:linear-gradient(90deg, transparent, rgba(255,77,166,.55), transparent);
+}
+
+.bigLove{
+  margin:10px 0 6px;
+  font-size:34px;
+  line-height:1.1;
+  letter-spacing:1px;
+  text-transform:uppercase;
+  background:linear-gradient(90deg,#ff4da6,#ffd1e8,#ff4da6);
+  -webkit-background-clip:text;
+  background-clip:text;
+  color:transparent;
+  animation:pulseGlow 2.2s ease-in-out infinite;
+}
+
+@keyframes pulseGlow{
+  0%,100%{ transform:scale(1); filter:drop-shadow(0 0 10px rgba(255,77,166,.18)); }
+  50%{ transform:scale(1.02); filter:drop-shadow(0 0 16px rgba(255,77,166,.35)); }
+}
+
+.promiseText{
+  max-width:720px;
+  margin:0 auto;
+  line-height:1.8;
+  opacity:.92;
+}
+
+.miniRow{
+  margin:14px 0 4px;
+  display:flex;
+  gap:10px;
+  justify-content:center;
+  flex-wrap:wrap;
+}
+
+.pill{
+  padding:8px 12px;
+  border-radius:999px;
+  font-size:14px;
+  background:rgba(0,0,0,.35);
+  border:1px solid rgba(255,255,255,.08);
+}
+
+.floodTitle{
+  margin:8px 0 0;
+  color:#ff4da6;
+}
+
+.floodHint{
+  margin:4px 0 14px;
+  opacity:.8;
+  font-size:14px;
+}
+
+.floodBox{
+  text-align:left;
+  border-radius:14px;
+  padding:14px;
+  background:rgba(0,0,0,.45);
+  border:1px solid rgba(255,255,255,.06);
+  min-height:260px;
+}
+
+.floodLine{
+  padding:10px 10px;
+  margin:8px 0;
+  border-radius:12px;
+  background:rgba(255,77,166,.08);
+  border:1px solid rgba(255,77,166,.18);
+  line-height:1.7;
+  opacity:0;
+  transform:translateY(10px);
+  animation:lineIn .55s ease forwards;
+}
+
+@keyframes lineIn{
+  to{ opacity:1; transform:translateY(0); }
+}
+
+.endLine{
+  margin-top:18px;
+  font-size:16px;
+  opacity:.95;
+  padding:12px;
+  border-radius:14px;
+  background:rgba(255,255,255,.04);
+  border:1px dashed rgba(255,77,166,.25);
+}
+
+.finalBtns{
+  margin-top:16px;
+  display:flex;
+  gap:10px;
+  justify-content:center;
+  flex-wrap:wrap;
+}
+
+/* Optional: nicer pink button */
+.pinkBtn{
+  padding:14px 22px;
+  font-size:18px;
+  border:none;
+  border-radius:14px;
+  background:#ff4da6;
+  color:#fff;
+}
 </style>
 </head>
 
@@ -394,6 +859,7 @@ index.html
       <button onclick="show('ourTimePage')">Our Time 📸</button>
       <button onclick="show('memoriesPage')">Memories 🪵</button>
       <button onclick="show('oneDayPage')">One Day 💍</button>
+      <button onclick="show('surprisePage')">Surprise ✨</button>
     </div>
 
     <div style="margin-top:18px;">
@@ -522,7 +988,152 @@ index.html
   </div>
 </div>
 </div>
+<div id="surprisePage" class="page scrollPage surpriseHero">
+  <div class="aurora"></div>
+  <div class="starfield"></div>
+  <div class="orb o1"></div>
+  <div class="orb o2"></div>
+  <div class="orb o3"></div>
+
+  <div class="heroCard">
+    <div class="bigTitle">A Surprise Only For You ✨</div>
+    <p class="subText">
+      This is not a normal page… it’s a small universe I made just for you.  
+      Tap the gift slowly… and read with your heart. 💗
+    </p>
+
+    <div class="giftStage">
+      <div id="gift3d" class="gift3d" onclick="openCinematicSurprise()">🎁</div>
+    </div>
+
+    <p class="hint">Tap 🎁 to open the cinematic letter.</p>
+
+    <div class="secretLink" onclick="secretLoveMode()">psst… try this secret ✨</div>
+
+    <div style="margin-top:14px; display:flex; gap:10px; justify-content:center; flex-wrap:wrap;">
+      <button class="btnDark" onclick="show('optionsPage')">Back 🌙</button>
+      <button onclick="show('step10Page')">Until We Complete 💖</button>
+      <!-- Keep this if you already have Step 10 page id -->
+      <!-- <button class="btnDark" onclick="show('loveFloodPage')">Next 💖</button> -->
+    </div>
+  </div>
+
+  <!-- CINEMATIC MODAL -->
+  <div id="cinModal" class="modal">
+    <div class="modalBg" onclick="closeCinematicSurprise()"></div>
+
+    <div class="modalPanel">
+      <div class="modalTop">
+        <div style="color:#ff4d88; font-weight:bold;">💌 For My Suttumani</div>
+        <button class="closeBtn" onclick="closeCinematicSurprise()">Close ✖</button>
+      </div>
+
+      <div class="typeBox">
+        <div id="cinType"></div><span class="cursor">|</span>
+      </div>
+
+      <div class="promiseGrid">
+        <div class="promiseCard">
+          <div class="badge">🌙 Promise 1</div>
+          <b>I’ll be your calm</b> — even when life feels loud.
+        </div>
+        <div class="promiseCard">
+          <div class="badge">💗 Promise 2</div>
+          <b>I’ll choose you</b> — not only on easy days… on every day.
+        </div>
+        <div class="promiseCard">
+          <div class="badge">🫂 Promise 3</div>
+          <b>I’ll be your safe place</b> — where you can be fully you.
+        </div>
+        <div class="promiseCard">
+          <div class="badge">💍 Promise 4</div>
+          <b>I’ll dream with you</b> — our future, our home, our “one day”.
+        </div>
+      </div>
+
+      <div class="finalLine">
+        Always remember… <b style="color:#ff4d88;">I love you, suttumani</b> 💋
+      </div>
+
+      <div style="margin-top:14px; display:flex; gap:10px; justify-content:center; flex-wrap:wrap;">
+        <button onclick="spawnLoveConfetti(80)">More Love 💖</button>
+        <button class="btnDark" onclick="closeCinematicSurprise()">Back</button>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- FINAL LOVE FLOOD PAGE (STEP 10) -->
+<div id="finalPage" class="page scrollPage">
+  <div class="finalWrap">
+    <h2 class="finalTitle">My Heart For You, Shuttumani 💗</h2>
+    <p class="finalSub">
+      This is not just a page… it’s my feelings, written in a way you can feel.  
+      Scroll… and watch how deeply I love you. 🫶
+    </p>
+
+    <div class="finalCard">
+      <div id="typeLine" class="typeLine"> </div>
+      <div class="dividerGlow"></div>
+
+      <h1 class="bigLove" id="bigLove">I LOVE YOU SHUTTUMANI</h1>
+      <!-- SECRET (hidden) -->
+<div id="secretBox" style="display:none; margin-top:14px;">
+  <p style="opacity:.85; margin:0 0 8px;">
+    Secret unlocked ✨ Type the magic word…
+  </p>
+  <input id="secretInput" placeholder="type here..." style="width:min(360px,85vw);" />
+  <div style="margin-top:10px;">
+    <button onclick="checkSecret()">Unlock 💍</button>
+  </div>
+</div>
+
+<!-- SECRET MODAL -->
+<div id="secretModal" style="display:none; position:fixed; inset:0; z-index:10000;">
+  <div style="position:absolute; inset:0; background:rgba(0,0,0,.7); backdrop-filter:blur(8px);" onclick="closeSecret()"></div>
+  <div style="position:absolute; left:50%; top:50%; transform:translate(-50%,-50%);
+              width:min(520px,92vw); background:#0f0f0f; border:1px solid rgba(255,77,166,.25);
+              border-radius:20px; padding:18px; text-align:center; box-shadow:0 30px 80px rgba(0,0,0,.55);">
+    <h2 style="margin:0 0 8px; color:#ff4da6;">💍 Will you marry me?</h2>
+    <p style="opacity:.92; line-height:1.7; margin:0 0 14px;">
+      Not today, not tomorrow… but one day…  
+      I want to hold your hand forever, and call you mine in front of the world. ❤️
+    </p>
+    <button class="btnDark" onclick="closeSecret()">Close ✖</button>
+  </div>
+</div>
+      <p class="promiseText">
+        I don’t love you for a moment… I love you for every tomorrow.  
+        I’ll be your calm in chaos, your smile in sadness, your home in every place.  
+        No matter what happens… my heart will always choose you. ❤️
+      </p>
+
+      <div class="miniRow">
+        <span class="pill">Forever ♾️</span>
+        <span class="pill">Only You 💗</span>
+        <span class="pill">My World 🌍</span>
+      </div>
+
+      <div class="dividerGlow"></div>
+
+      <h3 class="floodTitle">Love Flood 🌊</h3>
+      <p class="floodHint">Every line is true… every line is for you.</p>
+
+      <div id="floodBox" class="floodBox"></div>
+
+      <div class="endLine" id="endLine"> </div>
+
+      <div class="finalBtns">
+        <button class="btnDark" onclick="show('surprisePage')">Back 🌙</button>
+        <button onclick="replayFinal()">Replay ✨</button>
+      </div>
+    </div>
+  </div>
+</div>
 <script>
+  function openSurprise(){
+  const box = document.getElementById("hiddenSurprise");
+  if(box) box.style.display = "block";
+}
 function show(pageId){
   document.querySelectorAll('.page').forEach(p=>p.classList.remove('active'));
   const page = document.getElementById(pageId);
@@ -598,6 +1209,198 @@ setInterval(()=>{
     grid.appendChild(card);
   }
 })();
+let cinTyped = false;
+
+function openCinematicSurprise(){
+  const gift = document.getElementById("gift3d");
+  if(gift) gift.classList.add("open");
+
+  // little “heartbeat” feel (visual)
+  spawnLoveConfetti(35);
+
+  const modal = document.getElementById("cinModal");
+  if(modal) modal.classList.add("show");
+
+  if(!cinTyped){
+    cinTyped = true;
+    typeWriterCinematic(
+`Hey ponnahhh… 💗
+
+If the world ever asks me what my favourite place is…
+I’ll say: it’s wherever YOU are.
+
+Some people become memories…
+but you became my comfort, my peace, my “home” feeling.
+
+And yes… I’m serious:
+I LOVE YOU. Always. ❤️`,
+      "cinType",
+      18
+    );
+  }
+}
+
+function closeCinematicSurprise(){
+  const modal = document.getElementById("cinModal");
+  if(modal) modal.classList.remove("show");
+}
+
+function typeWriterCinematic(text, elId, speed){
+  const el = document.getElementById(elId);
+  if(!el) return;
+  el.textContent = "";
+  let i = 0;
+  const timer = setInterval(()=>{
+    el.textContent += text[i] || "";
+    i++;
+    if(i >= text.length) clearInterval(timer);
+  }, speed);
+}
+
+function spawnLoveConfetti(count){
+  const emojis = ["❤️","💗","💖","💞","💘","💓","💋"];
+  for(let i=0;i<count;i++){
+    const c = document.createElement("div");
+    c.className = "confetti";
+    c.textContent = emojis[Math.floor(Math.random()*emojis.length)];
+    c.style.left = Math.random()*100 + "vw";
+    c.style.fontSize = (12 + Math.random()*16) + "px";
+    c.style.animationDuration = (2.2 + Math.random()*2.3) + "s";
+    c.style.opacity = (0.55 + Math.random()*0.4).toFixed(2);
+    document.body.appendChild(c);
+    setTimeout(()=>c.remove(), 5200);
+  }
+}
+
+/* secret mode: tiny extra magic */
+function secretLoveMode(){
+  spawnLoveConfetti(120);
+  const msg = "✨ Secret unlocked: extra love for my suttumani ✨";
+  alert(msg);
+}
+let floodTimer = null;
+let typeTimer = null;
+
+const loveLines = [
+  "I love you, Shuttumani… more than words can ever hold. 💗",
+  "You are not a part of my life… you ARE my life. 🫶",
+  "If the world goes silent… my heart will still say your name. ❤️",
+  "Every day, my love for you grows… quietly, deeply, endlessly. ♾️",
+  "Your smile is my peace… your voice is my comfort. 💞",
+  "I don’t want perfect… I want YOU. Always. 💍",
+  "No distance, no time, no situation… can reduce what I feel for you. 🥺",
+  "Even in my worst days… thinking of you makes me breathe again. 🌙",
+  "I’m proud of you… I’m thankful for you… I’m yours. 💗",
+  "One day… I will hold your hand and say: ‘We made it.’ 🫂",
+  "You are my safest place… my favorite person… my forever. ♾️",
+  "I LOVE YOU SHUTTUMANI… today, tomorrow, and all tomorrows. ❤️"
+];
+
+// Typewriter line
+function startTypeLine(){
+  const el = document.getElementById("typeLine");
+  if(!el) return;
+  const text = "This page is my heart… and you are the reason it beats. 💗";
+  el.innerHTML = "";
+  let i = 0;
+
+  if(typeTimer) clearInterval(typeTimer);
+  typeTimer = setInterval(() => {
+    el.innerHTML += text[i] || "";
+    i++;
+    if(i > text.length){
+      clearInterval(typeTimer);
+      typeTimer = null;
+    }
+  }, 35);
+}
+
+function clearFlood(){
+  const box = document.getElementById("floodBox");
+  const end = document.getElementById("endLine");
+  if(box) box.innerHTML = "";
+  if(end) end.innerHTML = "";
+}
+
+function startFlood(){
+  const box = document.getElementById("floodBox");
+  const end = document.getElementById("endLine");
+  if(!box) return;
+
+  clearFlood();
+  let idx = 0;
+
+  if(floodTimer) clearInterval(floodTimer);
+  floodTimer = setInterval(() => {
+    const line = document.createElement("div");
+    line.className = "floodLine";
+    line.innerHTML = "💗 " + loveLines[idx % loveLines.length];
+    box.appendChild(line);
+
+    // Keep scrolling down smoothly
+    box.scrollTo({ top: box.scrollHeight, behavior: "smooth" });
+
+    idx++;
+    if(idx >= 60){ // 60 lines flood (beautiful but not heavy)
+      clearInterval(floodTimer);
+      floodTimer = null;
+      if(end){
+        end.innerHTML = "If you read till here… just know this: I chose you. And I’ll keep choosing you. ❤️";
+      }
+    }
+  }, 650);
+}
+
+function openFinal(){
+  show("finalPage");
+  startTypeLine();
+  startFlood();
+}
+
+function replayFinal(){
+  startTypeLine();
+  startFlood();
+}
+let tapCount = 0;
+let tapTimer = null;
+
+function enableSecretTaps(){
+  const loveTitle = document.getElementById("bigLove");
+  if(!loveTitle) return;
+
+  loveTitle.onclick = () => {
+    tapCount++;
+    if(tapTimer) clearTimeout(tapTimer);
+
+    // reset taps if user stops for 1.2s
+    tapTimer = setTimeout(()=>{ tapCount = 0; }, 1200);
+
+    if(tapCount >= 5){
+      tapCount = 0;
+      const box = document.getElementById("secretBox");
+      if(box){
+        box.style.display = "block";
+        const inp = document.getElementById("secretInput");
+        if(inp) inp.focus();
+      }
+    }
+  };
+}
+
+function checkSecret(){
+  const inp = document.getElementById("secretInput");
+  const val = (inp?.value || "").trim().toLowerCase();
+  if(val === "shuttumani"){
+    document.getElementById("secretModal").style.display = "block";
+  }else{
+    alert("Not this 😳 try again…");
+  }
+}
+
+function closeSecret(){
+  const m = document.getElementById("secretModal");
+  if(m) m.style.display = "none";
+}
 </script>
 
 </body>
