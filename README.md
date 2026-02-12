@@ -759,10 +759,12 @@
 </head>
 
 <body>
-
+  
 <audio id="bgMusic" loop>
   <source src="music.mp3" type="audio/mpeg" />
 </audio>
+
+<!-- LOCK PAGE -->
 <div id="lockPage" class="page active">
   <div class="center">
     <h1>shuttumani 💋</h1>
@@ -773,8 +775,10 @@
       onkeydown="if(event.key==='Enter'){ checkPassword(); }">
 
     <button type="button" onclick="checkPassword()">Unlock</button>
+  </div>
 </div>
-</div>
+
+<!-- ENVELOPE PAGE -->
 <div id="envelopePage" class="page">
   <div class="center">
     <h2 style="margin:0 0 8px;">Love Letter 💌</h2>
@@ -785,9 +789,11 @@
       <div class="paper">💖</div>
     </div>
 
-   <p style="opacity:.8;margin:8px 0 0;">Tap the envelope to open 💌</p>
+    <p style="opacity:.8;margin:8px 0 0;">Tap the envelope to open 💌</p>
   </div>
 </div>
+
+<!-- LETTER PAGE -->
 <div id="letterPage" class="page scrollPage">
   <h2 class="title">For You ❤️</h2>
 
@@ -804,7 +810,7 @@
   <div style="max-width:720px;margin:14px auto 30px;display:flex;gap:10px;justify-content:center;flex-wrap:wrap;">
     <button onclick="show('countdownPage')">Our Date 💞</button>
     <button class="btnDark" onclick="show('envelopePage')">Back 💌</button>
-</div>
+  </div>
 </div>
 <div id="countdownPage" class="page scrollPage">
   <h2 class="title" style="color:#ff4d88;">We committed on</h2>
