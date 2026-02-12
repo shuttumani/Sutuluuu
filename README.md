@@ -1279,14 +1279,42 @@
 <!-- UMMAH COUNTDOWN PAGE -->
 <div id="ummaCountdownPage" class="page scrollPage">
   <div class="center">
+
     <h2 style="color:#ff4da6;">Coming Back To You 💋</h2>
     <p style="opacity:0.9;">A small wait… then we go back to the start 💖</p>
-    <h1 id="ummaTimer" style="font-size:42px; margin-top:10px;">15</h1>
+
+    <!-- 💞 COMMITMENT COUNTDOWN -->
+    <div id="commitTimer"
+         style="margin:14px 0; font-size:16px; opacity:0.9;">
+    </div>
+
+    <!-- ⏳ 15 SECOND TIMER -->
+    <h1 id="ummaTimer" style="font-size:42px;">15</h1>
     <p style="opacity:0.8;">seconds left…</p>
+
   </div>
 </div>
 
 <script>
+  function startCommitCountdown(){
+  const target = new Date("2025-03-01T00:00:00").getTime();
+
+  setInterval(() => {
+    const now = Date.now();
+    const diff = now - target;
+
+    const days  = Math.floor(diff / (1000*60*60*24));
+    const hrs   = Math.floor((diff / (1000*60*60)) % 24);
+    const mins  = Math.floor((diff / (1000*60)) % 60);
+    const secs  = Math.floor((diff / 1000) % 60);
+
+    const el = document.getElementById("commitTimer");
+    if(el){
+      el.innerHTML =
+        `💗 ${days} days ${hrs} hrs ${mins} mins ${secs} secs since 01-03-2025`;
+    }
+  }, 1000);
+  }
   function normalizeSecret(s){
   return (s || "")
     .toLowerCase()
