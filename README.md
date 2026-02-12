@@ -774,6 +774,7 @@
 
     <button type="button" onclick="checkPassword()">Unlock</button>
 </div>
+</div>
 <div id="envelopePage" class="page">
   <div class="center">
     <h2 style="margin:0 0 8px;">Love Letter 💌</h2>
@@ -784,8 +785,8 @@
       <div class="paper">💖</div>
     </div>
 
-    <p style="opacity:.8;margin:8px 0 0;">Tap the envelope to open 💌</p>
-</div>
+   <p style="opacity:.8;margin:8px 0 0;">Tap the envelope to open 💌</p>
+  </div>
 </div>
 <div id="letterPage" class="page scrollPage">
   <h2 class="title">For You ❤️</h2>
