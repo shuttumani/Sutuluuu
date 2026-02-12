@@ -1338,14 +1338,17 @@ function startUmmahCountdown(seconds){
 }
 
 function checkSecret(){
-  const v = document.getElementById("secretInput").value.trim().toLowerCase();
+  const input = document.getElementById("secretInput").value.trim().toLowerCase();
 
-  if(v === "ammede ponnu njana"){
-    document.getElementById("secretModal").style.display = "block";
+  if(input === "ammede ponnu njana"){
+      openSecretModal();
   } else {
-    alert("Not the magic word 💔");
+      alert("Not this 😳 try again...");
   }
 }
+  function openSecretModal(){
+  document.getElementById("secretModal").style.display = "block";
+  }
 
 function closeSecret(){
   document.getElementById("secretModal").style.display = "none";
