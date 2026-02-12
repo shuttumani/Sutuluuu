@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html>
 <head>
 <meta charset="UTF-8" />
@@ -192,7 +193,7 @@
 @keyframes bubbleFloat{
   0%,100%{transform:translateY(0);}
   50%{transform:translateY(-6px);}
-  }
+                      }
   .futureWrap{
   max-width:900px;
   margin:0 auto;
@@ -289,7 +290,7 @@
   text-align:left;
   line-height:1.9;
   opacity:.95;
-          }
+}
   /* Surprise Page */
 .surpriseBox{
   max-width:900px;
@@ -348,6 +349,132 @@
   border-radius:999px;
   font-size:14px;
   opacity:.9;
+}
+  /* ===== Surprise Pro ===== */
+.surpriseSky{
+  position:relative;
+  overflow:hidden;
+}
+
+.stars{
+  position:absolute;
+  inset:-40px;
+  background:
+    radial-gradient(circle at 20% 20%, rgba(255,255,255,.16), transparent 35%),
+    radial-gradient(circle at 80% 30%, rgba(255,255,255,.12), transparent 40%),
+    radial-gradient(circle at 50% 70%, rgba(255,255,255,.10), transparent 45%),
+    radial-gradient(circle at 30% 85%, rgba(255,77,136,.10), transparent 45%),
+    radial-gradient(circle at 70% 75%, rgba(58,160,255,.08), transparent 45%);
+  filter:blur(.2px);
+  animation: starDrift 10s ease-in-out infinite;
+  pointer-events:none;
+  z-index:0;
+}
+@keyframes starDrift{
+  0%,100%{transform:translateY(0);}
+  50%{transform:translateY(14px);}
+}
+
+.glowRing{
+  width:min(520px,90vw);
+  margin:0 auto 14px;
+  padding:14px 14px 18px;
+  border-radius:18px;
+  border:1px solid rgba(255,77,136,.22);
+  background:radial-gradient(circle at 50% 20%, rgba(255,77,136,.12), transparent 60%),
+             radial-gradient(circle at 50% 80%, rgba(58,160,255,.07), transparent 55%),
+             #0f0f0f;
+  box-shadow:0 0 35px rgba(255,77,136,.10);
+  position:relative;
+  z-index:2;
+}
+
+.giftPro{
+  font-size:72px;
+  cursor:pointer;
+  user-select:none;
+  -webkit-tap-highlight-color:transparent;
+  filter:drop-shadow(0 12px 22px rgba(0,0,0,.45));
+  animation: giftFloat 2.2s ease-in-out infinite;
+}
+@keyframes giftFloat{
+  0%,100%{transform:translateY(0) rotate(-2deg);}
+  50%{transform:translateY(-12px) rotate(2deg);}
+}
+
+.subLine{
+  opacity:.88;
+  margin:10px 0 0;
+  line-height:1.6;
+}
+
+.revealTextPro{
+  display:none;
+  margin-top:16px;
+  padding:16px;
+  background:#111;
+  border-radius:14px;
+  border:1px solid #222;
+  line-height:1.85;
+  opacity:.96;
+  text-align:left;
+}
+
+.typeLine{
+  font-size:16px;
+  white-space:pre-wrap;
+}
+
+.cursor{
+  display:inline-block;
+  margin-left:3px;
+  width:10px;
+  animation: blink .8s infinite;
+}
+@keyframes blink{
+  0%,100%{opacity:0;}
+  50%{opacity:1;}
+}
+
+.promiseGrid{
+  display:grid;
+  grid-template-columns:1fr;
+  gap:10px;
+  margin-top:14px;
+}
+@media (min-width:700px){
+  .promiseGrid{grid-template-columns:1fr 1fr;}
+}
+.promiseCard{
+  background:#0f0f0f;
+  border:1px solid #222;
+  border-radius:14px;
+  padding:12px 14px;
+  line-height:1.75;
+}
+.promiseCard b{color:#ff4d88;}
+.badge{
+  display:inline-block;
+  padding:6px 10px;
+  border-radius:999px;
+  background:#111;
+  border:1px solid #2a2a2a;
+  font-size:13px;
+  opacity:.9;
+  margin-bottom:8px;
+}
+
+/* tiny heart burst particles */
+.burstHeart{
+  position:fixed;
+  font-size:18px;
+  pointer-events:none;
+  z-index:9999;
+  animation: burstFly 900ms ease-out forwards;
+}
+@keyframes burstFly{
+  0%{transform:translate(0,0) scale(1); opacity:1;}
+  100%{transform:translate(var(--dx), var(--dy)) scale(0.6); opacity:0;}
 }
   /* ===== CINEMATIC SURPRISE (BIG) ===== */
 .surpriseHero{
@@ -601,7 +728,7 @@
 @keyframes fall{
   from{transform:translateY(-40px) rotate(0deg);}
   to{transform:translateY(110vh) rotate(360deg);}
-    }
+                    }
 /* ===== STEP 10 FINAL BEAUTY ===== */
 .finalWrap{
   max-width:900px;
@@ -759,12 +886,10 @@
 </head>
 
 <body>
-  
+
 <audio id="bgMusic" loop>
   <source src="music.mp3" type="audio/mpeg" />
 </audio>
-
-<!-- LOCK PAGE -->
 <div id="lockPage" class="page active">
   <div class="center">
     <h1>shuttumani 💋</h1>
@@ -777,11 +902,10 @@
     <button type="button" onclick="checkPassword()">Unlock</button>
   </div>
 </div>
-
-<!-- ENVELOPE PAGE -->
 <div id="envelopePage" class="page">
   <div class="center">
     <h2 style="margin:0 0 8px;">Love Letter 💌</h2>
+    
 
     <div class="newEnvelope" onclick="openLetter()">
       <div class="topFlap"></div>
@@ -792,8 +916,6 @@
     <p style="opacity:.8;margin:8px 0 0;">Tap the envelope to open 💌</p>
   </div>
 </div>
-
-<!-- LETTER PAGE -->
 <div id="letterPage" class="page scrollPage">
   <h2 class="title">For You ❤️</h2>
 
@@ -807,11 +929,11 @@
     Appo veendum paraya I LOVE YOU ❤️
   </div>
 
-<div style="max-width:720px;margin:14px auto 30px;display:flex;gap:10px;justify-content:center;flex-wrap:wrap;">
-  <button onclick="show('countdownPage')">Our Date 💞</button>
-  <button class="btnDark" onclick="show('envelopePage')">Back 💌</button>
+  <div style="max-width:720px;margin:14px auto 30px;display:flex;gap:10px;justify-content:center;flex-wrap:wrap;">
+    <button onclick="show('countdownPage')">Our Date 💞</button>
+    <button class="btnDark" onclick="show('envelopePage')">Back 💌</button>
+  </div>
 </div>
-
 <div id="countdownPage" class="page scrollPage">
   <h2 class="title" style="color:#ff4d88;">We committed on</h2>
   <h1 style="margin:0 0 6px;">01 • 03 • 2025 💖</h1>
@@ -827,7 +949,7 @@
     <p>💗 20-07-2010 — The Day the World Became Beautiful  
     Long before I knew you… before tuition, before conversations, before feelings… this was the day you came into this world. And I sometimes think how lucky this world is to have you in it. Because without this day, there would be no smiles from you, no talks with you, no “us.” 20-07-2010 is special not just because you were born… but because that’s the day the person I would one day love started her journey.</p>
   </div>
-</div>
+
   <div style="max-width:720px;margin:14px auto 30px;display:flex;gap:10px;justify-content:center;flex-wrap:wrap;">
     <button onclick="show('diaryPage')">Diary 📖</button>
     <button class="btnDark" onclick="show('letterPage')">Back ❤️</button>
@@ -888,7 +1010,6 @@
     </div>
   </div>
 </div>
-</div>
 
 <div id="memoriesPage" class="page scrollPage">
   <h2 class="title" style="color:#ff4d88;">Memories 🪵</h2>
@@ -944,8 +1065,6 @@
     <button class="btnDark" onclick="show('optionsPage')">Back 🌙</button>
   </div>
 </div>
-</div>
-
 <div id="oneDayPage" class="page scrollPage">
   <h2 class="title" style="color:#ff4d88;">One Day 💍</h2>
 
@@ -991,7 +1110,6 @@
     <button class="btnDark" onclick="show('optionsPage')">Back 🌙</button>
   </div>
 </div>
-</div>
 <div id="surprisePage" class="page scrollPage surpriseHero">
   <div class="aurora"></div>
   <div class="starfield"></div>
@@ -1016,7 +1134,7 @@
 
     <div style="margin-top:14px; display:flex; gap:10px; justify-content:center; flex-wrap:wrap;">
       <button class="btnDark" onclick="show('optionsPage')">Back 🌙</button>
-      <button onclick="openFinal()">Until We Complete ✨</button>
+      <button onclick="show('diaryPage')">Diary 📖</button>
       <!-- Keep this if you already have Step 10 page id -->
       <!-- <button class="btnDark" onclick="show('loveFloodPage')">Next 💖</button> -->
     </div>
@@ -1062,6 +1180,7 @@
       <div style="margin-top:14px; display:flex; gap:10px; justify-content:center; flex-wrap:wrap;">
         <button onclick="spawnLoveConfetti(80)">More Love 💖</button>
         <button class="btnDark" onclick="closeCinematicSurprise()">Back</button>
+        <button onclick="openFinal()">Until We Complete ✨</button>
       </div>
     </div>
   </div>
@@ -1119,6 +1238,7 @@
       I want to hold your hand forever, and call you mine in front of the world. ❤️
     </p>
     <button class="btnDark" onclick="closeSecret()">Close ✖</button>
+    <button onclick="ummahhh()">Ummahhh 💋</button>
   </div>
 </div>
       <p class="promiseText">
@@ -1145,39 +1265,70 @@
       <div class="finalBtns">
         <button class="btnDark" onclick="show('surprisePage')">Back 🌙</button>
         <button onclick="replayFinal()">Replay ✨</button>
-        <button type="button" onclick="startUmmaCountdown()">Ummahhh 💋</button>
       </div>
     </div>
   </div>
 </div>
 <!-- SPECIAL UMMAH COUNTDOWN PAGE -->
-<!-- SPECIAL UMMAH COUNTDOWN PAGE -->
 <div id="ummaCountdownPage" class="page scrollPage">
   <div class="center">
+
     <h2 style="color:#ff4da6;">Coming Back To You 💋</h2>
-    <p style="opacity:0.9;">A small wait… before we go back to the beginning again 💖</p>
+
+    <p style="opacity:0.9;">
+      A small wait… before we go back to the beginning again 💖
+    </p>
+
     <h1 id="ummaTimer" style="font-size:42px; margin-top:10px;">15</h1>
+
     <p style="opacity:0.8;">seconds left…</p>
+
   </div>
 </div>
-<script>
-function startUmmaCountdown(){
 
+<script>
+  function ummahhh(){
+  closeSecret();
+
+  // Open new countdown page
   show("ummaCountdownPage");
 
-  let time = 15;
-  const el = document.getElementById("ummaTimer");
-  if(el) el.textContent = time;
+  let timeLeft = 15;
 
-  const timer = setInterval(() => {
-    time--;
-    if(el) el.textContent = time;
+  document.getElementById("ummaTimer").innerText = timeLeft;
 
-    if(time <= 0){
-      clearInterval(timer);
+  const interval = setInterval(() => {
+    timeLeft--;
+
+    document.getElementById("ummaTimer").innerText = timeLeft;
+
+    if(timeLeft <= 0){
+      clearInterval(interval);
+
+      // After countdown finishes → open envelope page
       show("envelopePage");
     }
+
   }, 1000);
+  }
+  function toggleSecretBox(){
+  const box = document.getElementById("secretBox");
+  if(!box) return;
+  box.style.display = (box.style.display === "none" || !box.style.display) ? "block" : "none";
+}
+
+function checkSecret(){
+  const v = document.getElementById("secretInput").value.trim().toLowerCase();
+
+  if(v === "ammede ponnu njana"){
+    document.getElementById("secretModal").style.display = "block";
+  } else {
+    alert("Not the magic word 💔");
+  }
+}
+
+function closeSecret(){
+  document.getElementById("secretModal").style.display = "none";
 }
   function openSurprise(){
   const box = document.getElementById("hiddenSurprise");
@@ -1258,7 +1409,65 @@ setInterval(()=>{
     grid.appendChild(card);
   }
 })();
-let cinTyped = false;
+let surpriseTyped = false;
+
+function openSurprisePro(){
+  const box = document.getElementById("hiddenSurprise");
+  if(!box) return;
+
+  box.style.display = "block";
+  burstHearts();
+
+  if(!surpriseTyped){
+    surpriseTyped = true;
+    typeWriter(
+`Hey ponnahhh… 💗
+
+If the world ever asks me what my favourite place is…
+I’ll say: it’s wherever YOU are.
+
+Some people become memories…
+but you became my comfort, my peace, my “home” feeling.
+
+And yes… I’m serious:
+I love you. Always.`,
+      "typeTarget",
+      18
+    );
+  }
+}
+
+function typeWriter(text, elId, speed){
+  const el = document.getElementById(elId);
+  if(!el) return;
+  el.textContent = "";
+  let i = 0;
+  const timer = setInterval(()=>{
+    el.textContent += text[i] || "";
+    i++;
+    if(i >= text.length) clearInterval(timer);
+  }, speed);
+}
+
+function burstHearts(){
+  const emojis = ["❤️","💗","💖","💞","💘","💓"];
+  const cx = window.innerWidth/2;
+  const cy = window.innerHeight/2;
+  for(let i=0;i<22;i++){
+    const h = document.createElement("div");
+    h.className = "burstHeart";
+    h.textContent = emojis[Math.floor(Math.random()*emojis.length)];
+    const dx = (Math.random()*240 - 120) + "px";
+    const dy = (Math.random()*220 - 140) + "px";
+    h.style.left = (cx + (Math.random()*40-20)) + "px";
+    h.style.top  = (cy + (Math.random()*40-20)) + "px";
+    h.style.setProperty("--dx", dx);
+    h.style.setProperty("--dy", dy);
+    document.body.appendChild(h);
+    setTimeout(()=>h.remove(), 950);
+  }
+}
+  let cinTyped = false;
 
 function openCinematicSurprise(){
   const gift = document.getElementById("gift3d");
@@ -1446,29 +1655,6 @@ function checkSecret(){
   }
 }
 
-function closeSecret(){
-  const m = document.getElementById("secretModal");
-  if(m) m.style.display = "none";
-}
-function toggleSecretBox(){
-  const box = document.getElementById("secretBox");
-  if(!box) return;
-  box.style.display = (box.style.display === "none" || !box.style.display) ? "block" : "none";
-}
-
-function checkSecret(){
-  const v = document.getElementById("secretInput").value.trim().toLowerCase();
-
-  if(v === "ammede ponnu njana"){
-    document.getElementById("secretModal").style.display = "block";
-  } else {
-    alert("Not the magic word 💔");
-  }
-}
-
-function closeSecret(){
-  document.getElementById("secretModal").style.display = "none";
-}
 </script>
 <!-- SECRET MODAL -->
 <div id="secretModal" style="display:none; position:fixed; inset:0; z-index:10000;">
