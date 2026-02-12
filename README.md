@@ -807,11 +807,11 @@
     Appo veendum paraya I LOVE YOU ❤️
   </div>
 
-  <div style="max-width:720px;margin:14px auto 30px;display:flex;gap:10px;justify-content:center;flex-wrap:wrap;">
-    <button onclick="show('countdownPage')">Our Date 💞</button>
-    <button class="btnDark" onclick="show('envelopePage')">Back 💌</button>
-  </div>
+<div style="max-width:720px;margin:14px auto 30px;display:flex;gap:10px;justify-content:center;flex-wrap:wrap;">
+  <button onclick="show('countdownPage')">Our Date 💞</button>
+  <button class="btnDark" onclick="show('envelopePage')">Back 💌</button>
 </div>
+
 <div id="countdownPage" class="page scrollPage">
   <h2 class="title" style="color:#ff4d88;">We committed on</h2>
   <h1 style="margin:0 0 6px;">01 • 03 • 2025 💖</h1>
