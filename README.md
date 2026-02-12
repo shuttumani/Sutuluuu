@@ -1196,7 +1196,7 @@
 <div id="secretBox" style="display:block; margin-top:14px; text-align:center;">
   <p style="opacity:.85; margin:0 0 10px;">Secret unlocked ✨ Type the magic word…</p>
 
-  <input id="secretInput" placeholder="type here..."
+  <input id="secretInput" placeholder="type here..." autocomplete="off">
          style="padding:12px; border-radius:12px; border:none; width:min(360px,85vw); text-align:center;"
          autocomplete="off" />
 
@@ -1316,20 +1316,37 @@ function toggleSecret(){
 }
 
 function checkSecret(){
+function normalizeSecret(s){
+  // lower + trim + remove ALL spaces and symbols
+  return (s || "")
+    .toLowerCase()
+    .trim()
+    .replace(/\s+/g, " ")
+    .replace(/[^a-z]/g, ""); // keep only letters
+}
+
+function checkSecret(){
   const inputEl = document.getElementById("secretInput");
-  if(!inputEl){ alert("secretInput missing"); return; }
+  if(!inputEl){ alert("secretInput not found"); return; }
 
-  const entered = normalizeText(inputEl.value);
+  const entered = normalizeSecret(inputEl.value);
+  const correct = normalizeSecret("ammede ponnu njana");
 
-  // ✅ YOUR MAGIC WORD:
-  const correct = normalizeText("ammede ponnu njana");
+  // DEBUG (temporarily): you can keep this 1 time to confirm
+  // alert("entered=" + entered + "\ncorrect=" + correct);
 
   if(entered === correct){
-    openSecret();
-    inputEl.value = "";
+    const modal = document.getElementById("secretModal");
+    if(modal) modal.style.display = "block";
+    else alert("secretModal not found");
   } else {
     alert("Not this 😳 try again...");
   }
+}
+
+function closeSecret(){
+  const modal = document.getElementById("secretModal");
+  if(modal) modal.style.display = "none";
 }
 
 function openSecret(){
