@@ -1192,54 +1192,44 @@
       This is not just a page… it’s my feelings, written in a way you can feel.  
       Scroll… and watch how deeply I love you. 🫶
     </p>
-    <!-- SECRET AREA (always available) -->
-<div id="secretBox" style="display:block; margin-top:14px; text-align:center;">
-  <p style="opacity:.85; margin:0 0 10px;">Secret unlocked ✨ Type the magic word…</p>
-
-  <input id="secretInput" placeholder="type here..." autocomplete="off">
-         style="padding:12px; border-radius:12px; border:none; width:min(360px,85vw); text-align:center;"
-         autocomplete="off" />
-
-  <div style="margin-top:10px;">
-    <button type="button" onclick="checkSecret()">Unlock 💍</button>
-  </div>
-</div>
     <!-- SECRET TRIGGER -->
 <p id="secretHint"
    style="margin:14px 0 0; opacity:.8; text-align:center; text-decoration:underline; cursor:pointer;"
    onclick="toggleSecretBox()">
   psst... try this secret ✨
 </p>
-<!-- SECRET (hidden) -->
-<div id="secretBox" style="display:none; margin-top:14px;">
-  <p style="opacity:.85; margin:0 0 8px;">
-    Secret unlocked ✨ Type the magic word…
-  </p>
+
+<!-- SECRET BOX (hidden by default) -->
+<div id="secretBox" style="display:none; margin-top:14px; text-align:center;">
+  <p style="opacity:.85; margin:0 0 10px;">Secret unlocked ✨ Type the magic word…</p>
 
   <input id="secretInput"
          placeholder="type here..."
-         style="width:min(360px,85vw); padding:14px; font-size:18px; border-radius:12px; border:none; text-align:center;"
+         style="padding:12px; border-radius:12px; border:none; width:min(360px,85vw); text-align:center;"
          autocomplete="off" />
 
   <div style="margin-top:10px; display:flex; gap:10px; justify-content:center; flex-wrap:wrap;">
-    <button onclick="checkSecret()">Unlock 💍</button>
-    <button class="btnDark" onclick="toggleSecret()">Hide</button>
+    <button type="button" onclick="checkSecret()">Unlock 💍</button>
+    <button class="btnDark" type="button" onclick="toggleSecretBox()">Hide</button>
   </div>
 </div>
 
-    <div class="finalCard">
-      <div id="typeLine" class="typeLine"> </div>
-      <div class="dividerGlow"></div>
+<!-- SECRET MODAL -->
+<div id="secretModal" style="display:none; position:fixed; inset:0; z-index:10000;">
+  <div style="position:absolute; inset:0; background:rgba(0,0,0,.7); backdrop-filter:blur(8px);" onclick="closeSecret()"></div>
+  <div style="position:absolute; left:50%; top:50%; transform:translate(-50%,-50%);
+              width:min(520px,92vw); background:#0f0f0f; border:1px solid rgba(255,77,166,.25);
+              border-radius:20px; padding:18px; text-align:center; box-shadow:0 30px 80px rgba(0,0,0,.55);">
+    <h2 style="margin:0 0 8px; color:#ff4da6;">💍 Will you marry me?</h2>
+    <p style="opacity:.92; line-height:1.7; margin:0 0 14px;">
+      Not today, not tomorrow… but one day…  
+      I want to hold your hand forever, and call you mine in front of the world. ❤️
+    </p>
 
-      <h1 class="bigLove" id="bigLove">I LOVE YOU SHUTTUMANI</h1>
-      <!-- SECRET (hidden) -->
-<div id="secretBox" style="display:none; margin-top:14px;">
-  <p style="opacity:.85; margin:0 0 8px;">
-    Secret unlocked ✨ Type the magic word…
-  </p>
-  <input id="secretInput" placeholder="type here..." style="width:min(360px,85vw);" />
-  <div style="margin-top:10px;">
-    <button onclick="checkSecret()">Unlock 💍</button>
+    <div style="display:flex; gap:10px; justify-content:center; flex-wrap:wrap;">
+      <button class="btnDark" type="button" onclick="closeSecret()">Close ✖</button>
+      <button type="button" onclick="ummahhh()">Ummahhh 💋</button>
+    </div>
   </div>
 </div>
 
@@ -1298,55 +1288,35 @@
 </div>
 
 <script>
-  function normalizeText(s){
+  function normalizeSecret(s){
   return (s || "")
     .toLowerCase()
     .trim()
-    .replace(/\s+/g, " "); // make multiple spaces -> single
+    .replace(/\s+/g, " "); // multiple spaces -> one
 }
 
-function toggleSecret(){
+function toggleSecretBox(){
   const box = document.getElementById("secretBox");
   if(!box) return;
   box.style.display = (box.style.display === "none" || !box.style.display) ? "block" : "none";
   if(box.style.display === "block"){
     const inp = document.getElementById("secretInput");
-    if(inp) setTimeout(()=>inp.focus(), 100);
+    if(inp) setTimeout(()=>inp.focus(), 120);
   }
 }
 
 function checkSecret(){
-function normalizeSecret(s){
-  // lower + trim + remove ALL spaces and symbols
-  return (s || "")
-    .toLowerCase()
-    .trim()
-    .replace(/\s+/g, " ")
-    .replace(/[^a-z]/g, ""); // keep only letters
-}
+  const inp = document.getElementById("secretInput");
+  if(!inp){ alert("secretInput not found"); return; }
 
-function checkSecret(){
-  const inputEl = document.getElementById("secretInput");
-  if(!inputEl){ alert("secretInput not found"); return; }
-
-  const entered = normalizeSecret(inputEl.value);
-  const correct = normalizeSecret("ammede ponnu njana");
-
-  // DEBUG (temporarily): you can keep this 1 time to confirm
-  // alert("entered=" + entered + "\ncorrect=" + correct);
+  const entered = normalizeSecret(inp.value);
+  const correct = normalizeSecret("ammede ponnu njana"); // YOUR MAGIC WORD
 
   if(entered === correct){
-    const modal = document.getElementById("secretModal");
-    if(modal) modal.style.display = "block";
-    else alert("secretModal not found");
-  } else {
+    openSecret();
+  }else{
     alert("Not this 😳 try again...");
   }
-}
-
-function closeSecret(){
-  const modal = document.getElementById("secretModal");
-  if(modal) modal.style.display = "none";
 }
 
 function openSecret(){
@@ -1358,6 +1328,7 @@ function closeSecret(){
   const modal = document.getElementById("secretModal");
   if(modal) modal.style.display = "none";
 }
+
   let ummahInterval = null;
 
 function openUmmah(){
