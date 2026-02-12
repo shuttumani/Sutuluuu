@@ -1192,6 +1192,18 @@
       This is not just a page… it’s my feelings, written in a way you can feel.  
       Scroll… and watch how deeply I love you. 🫶
     </p>
+    <!-- SECRET AREA (always available) -->
+<div id="secretBox" style="display:block; margin-top:14px; text-align:center;">
+  <p style="opacity:.85; margin:0 0 10px;">Secret unlocked ✨ Type the magic word…</p>
+
+  <input id="secretInput" placeholder="type here..."
+         style="padding:12px; border-radius:12px; border:none; width:min(360px,85vw); text-align:center;"
+         autocomplete="off" />
+
+  <div style="margin-top:10px;">
+    <button type="button" onclick="checkSecret()">Unlock 💍</button>
+  </div>
+</div>
     <!-- SECRET TRIGGER -->
 <p id="secretHint"
    style="margin:14px 0 0; opacity:.8; text-align:center; text-decoration:underline; cursor:pointer;"
