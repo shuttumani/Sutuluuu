@@ -1000,7 +1000,6 @@
   <div class="card" style="text-align:center;">
     <p style="margin-top:0;opacity:.9;">
       This is our photo wall 💗  
-      (I added 50 slots. You can replace photos later.)
     </p>
 
     <div class="gallery" id="galleryGrid"></div>
@@ -1440,7 +1439,7 @@ setInterval(()=>{
   const grid = document.getElementById("galleryGrid");
   if(!grid) return;
 
-  for(let i=1; i<=36; i++){
+  for(let i=1; i<=59; i++){
     const card = document.createElement("div");
     card.className = "photoCard";
 
