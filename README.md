@@ -1440,14 +1440,14 @@ setInterval(()=>{
   const grid = document.getElementById("galleryGrid");
   if(!grid) return;
 
-  for(let i=1; i<=50; i++){
+  for(let i=1; i<=36; i++){
     const card = document.createElement("div");
     card.className = "photoCard";
 
     // placeholder image (works even if you don't add photos yet)
     const img = document.createElement("img");
     img.alt = "Photo " + i;
-    img.src = `https://picsum.photos/seed/shuttumani_${i}/500/500`;
+    img.src = `photo${i}.jpg`;
 
     const cap = document.createElement("div");
     cap.className = "photoCap";
