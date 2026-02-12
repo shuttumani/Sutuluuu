@@ -1134,7 +1134,6 @@
 
     <div style="margin-top:14px; display:flex; gap:10px; justify-content:center; flex-wrap:wrap;">
       <button class="btnDark" onclick="show('optionsPage')">Back 🌙</button>
-      <button onclick="show('diaryPage')">Diary 📖</button>
       <!-- Keep this if you already have Step 10 page id -->
       <!-- <button class="btnDark" onclick="show('loveFloodPage')">Next 💖</button> -->
     </div>
@@ -1265,6 +1264,7 @@
       <div class="finalBtns">
         <button class="btnDark" onclick="show('surprisePage')">Back 🌙</button>
         <button onclick="replayFinal()">Replay ✨</button>
+         <button onclick="openUmmah()">Ummah 💋</button>
       </div>
     </div>
   </div>
