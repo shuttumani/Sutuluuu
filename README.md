@@ -961,11 +961,17 @@
   <div class="card">
     <h3 style="margin-top:0;text-align:center;">Today’s message from me 💗</h3>
 
-    <p style="line-height:1.9;">
-      Today… I just want you to know that you mean a lot to me.
-      Even small talks with you make my day better.
-      Whatever happens, I’m always here for you. ❤️
-    </p>
+    <p style="line-height:1.9; white-space:pre-line;">
+Atheeee enik ninne bhayankara ishtam a vellathum ariyoooi...
+Ninthe oro notathilum sparshathilum Njan alinju povum 😁🤭 entha paraya ninthe koode ollapo Njan vere karayam onnum aloikilla full free annu pakshe oro dhivasam nee veetil povumbo enik veshamam avum eni nale alle kanan pattu enthokke annelum Nammak athra bhagya korav onnum ella nalla reethiki thanneya poyenathum eni povunnathum enik parayan angane eppo prethekish ella ake ollathu ninthe koode kore neeram erunnu samayam kalayanam korach dhivasam alle ollu eniiii ath aloikumbo sherikum veshamam avum enikkk 🥺 Njan choikitte Ninak athratholam veshamam indu da eni kanan pattilla ennu ariyumbo bhayankara santhosam annu parayalle tta penne... Ninne okke nokki erikan enthoru resam annu ariyooo nee okke koode ollapa samayam ponathu arayilla...😘
+
+Meghaneeeeeee🩷 Njan angane peru vilikar onnum ella ennalum erikatte enne ishtam annu ennu Njan pretheshikunnu Ninak pinne Sneham porathu ellelum ullil indennu ariyaaaa entho annelum ishtam ishtam thanneya ath ninakum angane annennu vekkanu alla thudakathinum oru avasanam indu alla avasanathinu oru thudakam indu enthokke okke vannalum theeran ponilla ath orthu vecho ninne kond poovu nayeeee angane nee ottak sugikanda Panni nee Ennale kadichatu kai potti ariyoo vellathum Ninak engane Sneham nallonam ariyaaa oru ummah choicha avalku avide ellatha jada varum aennavo Nee parayana pole mood varane varo allel eniiiii kandariyaaa ponelkum munnu onnu vanna mathiyarnu enthokke annelum thannillelum enik engane oru koch indello ath mathi Athil Njan thripthi adaaaa...😁😚 Onnum ellelum ethra nalu ninne okke sahikanu Paranja ohhhh dark 💋 ninthe oro notathilum chiriyilum Enthinu neee oro pravesham kadikumbo Njan angu elland avum ennu vech kadikille tta
+
+Porathu bhayankara scn annelum ninthe eduth matharam ollu engane entho class kazhinju eni aenna ??? Bhaki pinne ttooooooo
+
+Appo Paranja pole
+I Love you meghana mwoleee🤭💋
+</p>
 
     <div style="display:flex;gap:10px;justify-content:center;flex-wrap:wrap;margin-top:16px;">
       <button onclick="openGoogleForm()">Reply Today 💌</button>
