@@ -1269,24 +1269,44 @@
     </div>
   </div>
 </div>
-<!-- SPECIAL UMMAH COUNTDOWN PAGE -->
+<!-- UMMAH COUNTDOWN PAGE -->
 <div id="ummaCountdownPage" class="page scrollPage">
   <div class="center">
-
     <h2 style="color:#ff4da6;">Coming Back To You 💋</h2>
-
-    <p style="opacity:0.9;">
-      A small wait… before we go back to the beginning again 💖
-    </p>
-
+    <p style="opacity:0.9;">A small wait… then we go back to the start 💖</p>
     <h1 id="ummaTimer" style="font-size:42px; margin-top:10px;">15</h1>
-
     <p style="opacity:0.8;">seconds left…</p>
-
   </div>
 </div>
 
 <script>
+  let ummahInterval = null;
+
+function openUmmah(){
+  // if this alert doesn't show, your button is blocked
+  // alert("Ummah clicked ✅");
+
+  show("ummaCountdownPage");
+  startUmmahCountdown(15);
+}
+
+function startUmmahCountdown(seconds){
+  clearInterval(ummahInterval);
+
+  let t = seconds;
+  const el = document.getElementById("ummaTimer");
+  if(el) el.textContent = t;
+
+  ummahInterval = setInterval(() => {
+    t--;
+    if(el) el.textContent = t;
+
+    if(t <= 0){
+      clearInterval(ummahInterval);
+      show("envelopePage"); // after 15 sec go to envelope
+    }
+  }, 1000);
+}
   function ummahhh(){
   closeSecret();
 
