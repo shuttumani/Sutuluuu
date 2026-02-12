@@ -1340,6 +1340,7 @@ function openUmmah(){
   // alert("Ummah clicked ✅");
 
   show("ummaCountdownPage");
+  startCommitCountdown();   // 💞 ADD THIS
   startUmmahCountdown(15);
 }
 
