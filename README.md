@@ -1305,29 +1305,6 @@ function toggleSecretBox(){
   }
 }
 
-function checkSecret(){
-  const inp = document.getElementById("secretInput");
-  if(!inp){ alert("secretInput not found"); return; }
-
-  const entered = normalizeSecret(inp.value);
-  const correct = normalizeSecret("ammede ponnu njana"); // YOUR MAGIC WORD
-
-  if(entered === correct){
-    openSecret();
-  }else{
-    alert("Not this 😳 try again...");
-  }
-}
-
-function openSecret(){
-  const modal = document.getElementById("secretModal");
-  if(modal) modal.style.display = "block";
-}
-
-function closeSecret(){
-  const modal = document.getElementById("secretModal");
-  if(modal) modal.style.display = "none";
-}
 
   let ummahInterval = null;
 
@@ -1716,16 +1693,6 @@ function enableSecretTaps(){
       }
     }
   };
-}
-
-function checkSecret(){
-  const inp = document.getElementById("secretInput");
-  const val = (inp?.value || "").trim().toLowerCase();
-  if(val === "shuttumani"){
-    document.getElementById("secretModal").style.display = "block";
-  }else{
-    alert("Not this 😳 try again…");
-  }
 }
 
 </script>
