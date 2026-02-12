@@ -1198,14 +1198,20 @@
    onclick="toggleSecretBox()">
   psst... try this secret ✨
 </p>
+<!-- SECRET (hidden) -->
+<div id="secretBox" style="display:none; margin-top:14px;">
+  <p style="opacity:.85; margin:0 0 8px;">
+    Secret unlocked ✨ Type the magic word…
+  </p>
 
-<!-- SECRET BOX (hidden) -->
-<div id="secretBox" style="display:none; margin-top:14px; text-align:center;">
-  <p style="opacity:.85; margin:0 0 10px;">Secret unlocked ✨ Type the magic word…</p>
-  <input id="secretInput" placeholder="type here..."
-         style="padding:12px; border-radius:12px; border:none; width:min(360px,85vw); text-align:center;" />
-  <div style="margin-top:10px;">
+  <input id="secretInput"
+         placeholder="type here..."
+         style="width:min(360px,85vw); padding:14px; font-size:18px; border-radius:12px; border:none; text-align:center;"
+         autocomplete="off" />
+
+  <div style="margin-top:10px; display:flex; gap:10px; justify-content:center; flex-wrap:wrap;">
     <button onclick="checkSecret()">Unlock 💍</button>
+    <button class="btnDark" onclick="toggleSecret()">Hide</button>
   </div>
 </div>
 
@@ -1280,6 +1286,49 @@
 </div>
 
 <script>
+  function normalizeText(s){
+  return (s || "")
+    .toLowerCase()
+    .trim()
+    .replace(/\s+/g, " "); // make multiple spaces -> single
+}
+
+function toggleSecret(){
+  const box = document.getElementById("secretBox");
+  if(!box) return;
+  box.style.display = (box.style.display === "none" || !box.style.display) ? "block" : "none";
+  if(box.style.display === "block"){
+    const inp = document.getElementById("secretInput");
+    if(inp) setTimeout(()=>inp.focus(), 100);
+  }
+}
+
+function checkSecret(){
+  const inputEl = document.getElementById("secretInput");
+  if(!inputEl){ alert("secretInput missing"); return; }
+
+  const entered = normalizeText(inputEl.value);
+
+  // ✅ YOUR MAGIC WORD:
+  const correct = normalizeText("ammede ponnu njana");
+
+  if(entered === correct){
+    openSecret();
+    inputEl.value = "";
+  } else {
+    alert("Not this 😳 try again...");
+  }
+}
+
+function openSecret(){
+  const modal = document.getElementById("secretModal");
+  if(modal) modal.style.display = "block";
+}
+
+function closeSecret(){
+  const modal = document.getElementById("secretModal");
+  if(modal) modal.style.display = "none";
+}
   let ummahInterval = null;
 
 function openUmmah(){
@@ -1636,6 +1685,7 @@ function openFinal(){
   show("finalPage");
   startTypeLine();
   startFlood();
+  document.getElementById("secretBox").style.display = "block";
 }
 
 function replayFinal(){
@@ -1694,5 +1744,6 @@ function checkSecret(){
     <button class="btnDark" onclick="closeSecret()">Close ✖</button>
   </div>
 </div>
+
 </body>
 </html>
