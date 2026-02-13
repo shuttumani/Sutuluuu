@@ -957,20 +957,71 @@
 </div>
 <div id="diaryPage" class="page scrollPage">
   <h2 class="title" style="color:#ff4d88;">Daily Diary 📖</h2>
-
+<h3 id="diaryDate" style="text-align:center; opacity:.8; margin-top:-6px;"></h3>
   <div class="card">
     <h3 style="margin-top:0;text-align:center;">Today’s message from me 💗</h3>
 
     <p style="line-height:1.9; white-space:pre-line;">
-Atheeee enik ninne bhayankara ishtam a vellathum ariyoooi...
-Ninthe oro notathilum sparshathilum Njan alinju povum 😁🤭 entha paraya ninthe koode ollapo Njan vere karayam onnum aloikilla full free annu pakshe oro dhivasam nee veetil povumbo enik veshamam avum eni nale alle kanan pattu enthokke annelum Nammak athra bhagya korav onnum ella nalla reethiki thanneya poyenathum eni povunnathum enik parayan angane eppo prethekish ella ake ollathu ninthe koode kore neeram erunnu samayam kalayanam korach dhivasam alle ollu eniiii ath aloikumbo sherikum veshamam avum enikkk 🥺 Njan choikitte Ninak athratholam veshamam indu da eni kanan pattilla ennu ariyumbo bhayankara santhosam annu parayalle tta penne... Ninne okke nokki erikan enthoru resam annu ariyooo nee okke koode ollapa samayam ponathu arayilla...😘
 
-Meghaneeeeeee🩷 Njan angane peru vilikar onnum ella ennalum erikatte enne ishtam annu ennu Njan pretheshikunnu Ninak pinne Sneham porathu ellelum ullil indennu ariyaaaa entho annelum ishtam ishtam thanneya ath ninakum angane annennu vekkanu alla thudakathinum oru avasanam indu alla avasanathinu oru thudakam indu enthokke okke vannalum theeran ponilla ath orthu vecho ninne kond poovu nayeeee angane nee ottak sugikanda Panni nee Ennale kadichatu kai potti ariyoo vellathum Ninak engane Sneham nallonam ariyaaa oru ummah choicha avalku avide ellatha jada varum aennavo Nee parayana pole mood varane varo allel eniiiii kandariyaaa ponelkum munnu onnu vanna mathiyarnu enthokke annelum thannillelum enik engane oru koch indello ath mathi Athil Njan thripthi adaaaa...😁😚 Onnum ellelum ethra nalu ninne okke sahikanu Paranja ohhhh dark 💋 ninthe oro notathilum chiriyilum Enthinu neee oro pravesham kadikumbo Njan angu elland avum ennu vech kadikille tta
+Ayyooooo enik annel nee engane samsarikanathu bhayankara ishtam ponnah 😘💋  
+Ninne enik sherikum misss avanu… eppo nee okke enthe koode venam.  
+Ninne kurich aloikatha samayam illa vaveeee… nee paranjathil njanum sheri vekkanu.  
+E generation il ninne pole oru kochine kittanum venam bhagyam.  
 
-Porathu bhayankara scn annelum ninthe eduth matharam ollu engane entho class kazhinju eni aenna ??? Bhaki pinne ttooooooo
+Pinne secret eppo paranjude… onnum nammal eduth vekkan padilla.  
+Enth indelum parayanam angot engotum 😁😘  
 
-Appo Paranja pole
-I Love you meghana mwoleee🤭💋
+Njan ninne annu ishtam annu eppo paranjillelo… enik ninne kitto onnum ellelum enne pole nalla oru chekkane kitto 😁😁 (chumma).  
+
+Pinne Valentine's Day ke varilla… nale Friday nee tuition nu varilla enna paranje… eni varo ennu arayilla daa… vanna mathiyarnu.  
+
+Valentine’s Day ayit ninak enthelum tharande… angane thannatha eth.  
+Ishtam ayindavum ennu Njan prethishikunnu.  
+Ninak alle Njan paisa chelav akkanu ennu complaint… eth korach variety alle 🤭  
+
+Enik santhosham ollond alle Njan enthelum medichu tharane…  
+Njan vere aruka medichu koduka?  
+Enik ninak medichu tharanam ennu okke indaville shuttumaniii 🤭💋  
+
+Nee kadichit potti vedhana angane ella… pakshe oru karyathil enik ishtam ayii…  
+Enth elum nee orma ayit thannuloooo… pinne orkan vendi neeyum indallo 🩷  
+
+Atheeee oru karayam parayitte… eni varumbo korach romantic ayikolu veeee 😁🤭  
+Varumbo thanne vannu kettipidich ummah okke thannu… enthelum okke choichu…  
+Kore okke samsarichuuuu… a flow il angot ponam.  
+
+Oru karyathil Njan bhayankara thripthi annu… randalkum nallonam ariyaaa.  
+Appo marakanda… one day nadakum… annu edutholam ninne ketta annu nee upadravichenu okke thirich tharum daa panni 😁  
+
+Ottak aloichu koota pinne enthina… enth indel paranjude…  
+Njan ninthe koode undallo 💗  
+
+Mwahhhhhh 💋💋💋  
+Mwahhhhhh 💋💋💋💋  
+Mwahhhhhh 💋💋💋💋  
+
+Njan paranja vishwosikonu arayilla… nee adipoli kocha…  
+Enik kittiyel pure gem ennu parayille… athupole 💎  
+Ath Njan aeppo venelum paraya… orthu vechooi… ath marilla orikelum.  
+
+Vacation nu okke kanum daaa… elland avide poovan enik pattilla.  
+Nee parayana pole romantic avan arayilla… pakshe enthe ethil Njan perfect annennu thonanu leeeeee ☺️  
+
+Romantic enik ellelum… athupole oru koch elle enik… ath mathi daaa 🩷  
+
+Kore ninnod mindan induuu… engane oru feel ella…  
+Neritu venam… ath pattilla… ath vere karayam.  
+
+Nee athil reply ayacholu tta… oru dhivasam orannam ennu ellata…  
+Enikk nee athra venelum ayachoooo…  
+
+Innu kiss day ayiiii… ennale thannu…  
+Innu eni nee varo ennu arayilla… vanna mathiyarnu 🫠  
+
+Appo mwahhhhhh 💋💋💋💋💋💋💋💋💋💋💋💋💋💋💋💋💋💋💋💋💋💋💋💋💋💋💋💋💋💋  
+
+I love you Sutuluuuu 💋🩷🫂😘  
+
 </p>
 
     <div style="display:flex;gap:10px;justify-content:center;flex-wrap:wrap;margin-top:16px;">
@@ -1728,7 +1779,21 @@ function enableSecretTaps(){
     }
   };
 }
+// automatic diary date
+(function(){
+  const el = document.getElementById("diaryDate");
+  if(!el) return;
 
+  const d = new Date();
+
+  const options = {
+    day: "2-digit",
+    month: "short",
+    year: "numeric"
+  };
+
+  el.innerHTML = "📖 Diary — " + d.toLocaleDateString("en-GB", options);
+})();
 </script>
 <!-- SECRET MODAL -->
 <div id="secretModal" style="display:none; position:fixed; inset:0; z-index:10000;">
