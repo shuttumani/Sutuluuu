@@ -1043,6 +1043,7 @@ I love you Sutuluuuu 💋🩷🫂😘
       <button onclick="show('memoriesPage')">Memories 🪵</button>
       <button onclick="show('oneDayPage')">One Day 💍</button>
       <button onclick="show('surprisePage')">Surprise ✨</button>
+      <button onclick="goValentine()">Valentine’s Day 💝</button>
     </div>
 
     <div style="margin-top:18px;">
@@ -1806,6 +1807,9 @@ function enableSecretTaps(){
 
   el.innerHTML = "📖 Diary — " + d.toLocaleDateString("en-GB", options);
 })();  
+  function goValentine(){
+  window.location.href = "https://shuttumani.github.io/valentine/";
+  }
 </script>
 <!-- SECRET MODAL -->
 <div id="secretModal" style="display:none; position:fixed; inset:0; z-index:10000;">
