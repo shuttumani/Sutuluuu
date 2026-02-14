@@ -1631,10 +1631,11 @@ function show(pageId){
   page.classList.add('active');
   window.scrollTo(0,0);
 
+  // ✅ SAFE: only call if functions exist
   if(pageId === "valentinePage"){
-    startValentine();
+    if(typeof startValentine === "function") startValentine();
   }else{
-    stopValentine();
+    if(typeof stopValentine === "function") stopValentine();
   }
 }
 
@@ -1956,7 +1957,6 @@ function enableSecretTaps(){
 
   el.innerHTML = "📖 Diary — " + d.toLocaleDateString("en-GB", options);
 })();
-  <script>
 /* ===== VALENTINE CINEMATIC LOGIC ===== */
 
 // Change this if your options page id is different:
@@ -2150,7 +2150,8 @@ function stopValentine(){
 
 // optional: if user swipes away using your navigation, it stops automatically
 // Call stopValentine() inside your show(pageId) when pageId != "valentinePage"
-</script>
+if(typeof startValentine !== "function") function startValentine(){}
+if(typeof stopValentine !== "function") function stopValentine(){}
 </script>
 <!-- SECRET MODAL -->
 <div id="secretModal" style="display:none; position:fixed; inset:0; z-index:10000;">
