@@ -961,67 +961,9 @@
   <div class="card">
     <h3 style="margin-top:0;text-align:center;">Today’s message from me 💗</h3>
 
-    <p style="line-height:1.9; white-space:pre-line;">
-
-Ayyooooo enik annel nee engane samsarikanathu bhayankara ishtam ponnah 😘💋  
-Ninne enik sherikum misss avanu… eppo nee okke enthe koode venam.  
-Ninne kurich aloikatha samayam illa vaveeee… nee paranjathil njanum sheri vekkanu.  
-E generation il ninne pole oru kochine kittanum venam bhagyam.  
-
-Pinne secret eppo paranjude… onnum nammal eduth vekkan padilla.  
-Enth indelum parayanam angot engotum 😁😘  
-
-Njan ninne annu ishtam annu eppo paranjillelo… enik ninne kitto onnum ellelum enne pole nalla oru chekkane kitto 😁😁 (chumma).  
-
-Pinne Valentine's Day ke varilla… nale Friday nee tuition nu varilla enna paranje… eni varo ennu arayilla daa… vanna mathiyarnu.  
-
-Valentine’s Day ayit ninak enthelum tharande… angane thannatha eth.  
-Ishtam ayindavum ennu Njan prethishikunnu.  
-Ninak alle Njan paisa chelav akkanu ennu complaint… eth korach variety alle 🤭  
-
-Enik santhosham ollond alle Njan enthelum medichu tharane…  
-Njan vere aruka medichu koduka?  
-Enik ninak medichu tharanam ennu okke indaville shuttumaniii 🤭💋  
-
-Nee kadichit potti vedhana angane ella… pakshe oru karyathil enik ishtam ayii…  
-Enth elum nee orma ayit thannuloooo… pinne orkan vendi neeyum indallo 🩷  
-
-Atheeee oru karayam parayitte… eni varumbo korach romantic ayikolu veeee 😁🤭  
-Varumbo thanne vannu kettipidich ummah okke thannu… enthelum okke choichu…  
-Kore okke samsarichuuuu… a flow il angot ponam.  
-
-Oru karyathil Njan bhayankara thripthi annu… randalkum nallonam ariyaaa.  
-Appo marakanda… one day nadakum… annu edutholam ninne ketta annu nee upadravichenu okke thirich tharum daa panni 😁  
-
-Ottak aloichu koota pinne enthina… enth indel paranjude…  
-Njan ninthe koode undallo 💗  
-
-Mwahhhhhh 💋💋💋  
-Mwahhhhhh 💋💋💋💋  
-Mwahhhhhh 💋💋💋💋  
-
-Njan paranja vishwosikonu arayilla… nee adipoli kocha…  
-Enik kittiyel pure gem ennu parayille… athupole 💎  
-Ath Njan aeppo venelum paraya… orthu vechooi… ath marilla orikelum.  
-
-Vacation nu okke kanum daaa… elland avide poovan enik pattilla.  
-Nee parayana pole romantic avan arayilla… pakshe enthe ethil Njan perfect annennu thonanu leeeeee ☺️  
-
-Romantic enik ellelum… athupole oru koch elle enik… ath mathi daaa 🩷  
-
-Kore ninnod mindan induuu… engane oru feel ella…  
-Neritu venam… ath pattilla… ath vere karayam.  
-
-Nee athil reply ayacholu tta… oru dhivasam orannam ennu ellata…  
-Enikk nee athra venelum ayachoooo…  
-
-Innu kiss day ayiiii… ennale thannu…  
-Innu eni nee varo ennu arayilla… vanna mathiyarnu 🫠  
-
-Appo mwahhhhhh 💋💋💋💋💋💋💋💋💋💋💋💋💋💋💋💋💋💋💋💋💋💋💋💋💋💋💋💋💋💋  
-
-I love you Sutuluuuu 💋🩷🫂😘  
-
+<p style="line-height:1.9; white-space:pre-wrap;">
+Aennalum secret okke parayam venel scn ella nee parayana pole 😁😚 innu diary milk Njan medicharnu nee varum ennu enik korach okke vishwosam indarnu ponnahhh crush adichit eppozhano parayane ayiii neritu okke parayande vaveee neee 🤭 ath scn onnum ella swantham chekkan annu vech crush adichuda ennu elllalo aethu ath Enthada Ninak thonathe namma committed annennu Njan athra mosham a 😁😁😁 Njan scn alleda ponnah eni Njan oru secret parayatte ninne kanan enth resamaaaaa enthe sutuluuuuu💋💋💋💋💋❤️ angu nokki povum arayalum Njan chelappo okke vekkum ethra nalla koch okke enik thanne anno set ayenu enthe allam karayam arinjitum ath entha paranjoluveeee 😚 nale kalath ambalathil poovave dheee ath enik ishtam ayilla ketta Ninne enik kitto ennu paranjathu ottum ottum ottum ethra nalu nee enthe thanne alla eniyum angane thanne Veliya mattam onnum ella eniyum ketta Ninne kond poovollu ath 💯 orapa ketta nayeeee pinne evide ollathu evide mathileee cringe aleee full 🤭🤭🤭😚😚😚😘 ath sheriya neritu full thallum preshnam annu pakshe Athilum indu Sneham aethu ❤️ pinne ninthe shuttumani Njanaaaa 😘😘😘😘😘🩷🩷🫂🫂🫂  aennalum eth ninthe veetukar ariyum appo nokkam ethra nalu kondupoyille athupole kondupoovam pinne pidikonu nokkam neyyy pidichu ennu vech ninne ettitu poovilla nayeeee ninne pole nee Mataram ollu athaaaaa scn ella Nammak deal akkam daaaa vacation kanan pattum aeppozhelum okke pinne engane okke mindam look aethuuu 😁 vere school il annelum engane annelum ninnod enganelum mindum ath orapa Njan thannel Ninak ishtapettulooo ath thanne veliya karayam enikkk ninthe santhosam ath mathiii nee happy alledaaa ponnah 🤭😚😚😚pinne paisa chelav ath scn ella enik pakshe Ninak nalla scn annu enthe santhosam Ninak enthelum medichu tharumbo athrollu eni exam kazhinja ellalo athondu korachum koodi alle ollu scn ella potte ohhh ath Njan yogikilla enthe Sneham Ninnekalum induuu nee poda panni innu Njan ninne swapnam kandu kedakam nale nee enneyum venel enne kettanathu okke kando swapnam veetil okke sammaichuu aethu lathu thanne Happy valentine's day Paranjulooo shoooo😚😚😚🤭🩷🩷🩷 Njan nerathe paranjatha athondu mwahhhhhh 💋💋💋💋💋💋💋💋💋💋💋💋💋💋💋💋💋💋💋 pinne entha eni Njan paraya oru karayam paraya enik oru 27 vayasu Ninak 26 kettam ready ayikoooo enne nee nokkikolu Ennit ttoooo Ennit venam ninne kond kore sthalathek poovan enthaleeeee ninne okke kondu nammal randu perum matharam Himalaya poyalooo otta mind Njan ready annu nee okkk alle ninne kore karangan kondu poonam Ninak ishtam ollathu medichu tharanam otta karayam ollu full ayit ath paraya ninne nallonam nokkanam eppo nokkanelum kore kore kore kore kore kore ♾️ eppo nallonam nokkanu indo daaa Njan ? Indavum leeeee ninthe koode tution class il erikumbo enth happy annu ariyooo enik vere alochana ella full neeya. Aennh thotu ninne enik ishtam ayoooo annu thotu enik first priority enik neeya ath eppoo veetil eppo enth indelum nee tution nu varooo Njan varum ath ninnod olla ishtam konda nee eppo tution nu vannillel Njan ottak tution class il engane annu ennu enik ariyaaaaa athupole Njan vannilllel nee engane ayirikkum Njan Karanam neee veshmikan padilla ath enik nirbandham annu nee choichit elle enik first priority araya ennu Njan enthe peru thanneya parayar Njan ennu vecha neeyum koodi alle appo araaa nee alle first priority Ninak vishwosam avo ennu arayilla aennalum paranjatha enik ninne bhayankara ishtam a 💋💋💋💋💋💋💋♾️ ninne eppo kettan pattiyel eppo kettiyene appo vere arum ninne kondu povillalo aethu🤭🤭🤭🤭 nee okke engane msg inu rply tharumbo Njan bhayankara happy adaaa 💋💋💋. Onnum ellelum Njan ishtam annu Paranja koch alle enik ishtam elland erikillalooo pinne Ummah choikumbo thannude Ninak panni athra choikanam ath Ninak oru dhivasam manasilavum choichat kittandu avumbo allel enne nee orkumboooo pakshe nee choicha Njan aeppo venelum ummahhhhh tharum eppo venooo enna pidichoooii mwahhhhhh 💋💋💋💋💋💋💋💋💋💋💋💋💋💋 I love you sutuluuuu 💋💋💋💋♾️ appo nale ethinu rply tharum ennu vekkunnu snehathodeeeeeeeeeeeee santhoshathodeeeeeeeee 
+ Ammede ponnu 🤭💋💋💋💋🫂🫂🫂🫂🫂🫂🫂🫂🫂🫂🫂🫂🫂🫂🫂🫂
 </p>
 
     <div style="display:flex;gap:10px;justify-content:center;flex-wrap:wrap;margin-top:16px;">
