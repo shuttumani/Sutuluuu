@@ -961,8 +961,7 @@
   <div class="card">
     <h3 style="margin-top:0;text-align:center;">Today’s message from me 💗</h3>
 <p style="line-height:1.9; white-space:pre-wrap; text-align:left;">
-
-njan nokkan paranjit indu parthanod scn avalle avide indel kittum neyyy nee padicholu ath aloikanda ketta ath avide indel avan edutholum okeyhh eth matharam aloikanda ketta mwahhhhhh 💋 💋 💋 💋 
+dhe neee engane erikanathu ottum ishtam alla enik enthuva daaa chakkare ammede ponnu nee alle appo engane okke scn avavooo nee engane erunna enik veshamam aville nee elle ath elle mattethu elle aethu avoooo manasilaya enik onnum manasilyilla atha 😘 enna ppdy ennit ninak
 
 </p>
 
