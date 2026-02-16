@@ -961,9 +961,7 @@
   <div class="card">
     <h3 style="margin-top:0;text-align:center;">Today’s message from me 💗</h3>
 <p style="line-height:1.9; white-space:pre-wrap; text-align:left;">
-atheee vere oru sambhavam indu eni msg ayakumbo https://shuttumani.github.io/shuttumani/
-ethil keri ayacholu Athil kerumbo password choikum 01032025 pinne email 
-kk8477089@gmail.com password Ammede ponnu neeya ammede A capital annu ath nokkikolu ethil keranelkum munnu enik oru rply ettolu 
+atheeee ath eppo venda tta maths exam kazhiyatte ennit thara korachum koodi indu daaaa ath Njan tharave sheri avanilla ath eppo mol padikkk kettaaaa mwahhhhhh I love you sutuluuuu 💋 💋 💋 💋 💋 💋 💋 ammede ponnu aradaaaaa 💋💋💋 pinne elle Ninak onnum ellada🤭🤭🤭
 
 
 </p>
