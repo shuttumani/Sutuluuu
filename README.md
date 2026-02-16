@@ -962,11 +962,7 @@
     <h3 style="margin-top:0;text-align:center;">Today’s message from me 💗</h3>
 <p style="line-height:1.9; white-space:pre-wrap; text-align:left;">
 
-Enik elle ninne elle bhayankara ishtam a nayeeeee nee vellathum ariyanindo vere oru sambhavam nokkanu indu ath maths exam kazhiyatte ellel eya dhivasam full athinu povum neyy pinne chelappo Njan thokkum nale athonda pinne ninne kondu poovollu nayeee appane deal akkaneeee scn avalle 
-
-Ennale kore nokki ennu ariyaaa shemikada ponnah ammede ponnu nee alleda  
-
-Eppo school ilek poyondirika id okke kodukande athonda vannit bhaki ayaka 💗
+school il indennu orapano ninak enna deal akkam nee ayit pani thara angane onnum ella daa nee enthe ponnu alle vaveee school il nokkaneeee scn avalle neeee njan elledaaaa 🤭🤭🤭🤭💋
 
 </p>
 
