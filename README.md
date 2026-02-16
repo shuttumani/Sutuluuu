@@ -962,7 +962,7 @@
     <h3 style="margin-top:0;text-align:center;">Today’s message from me 💗</h3>
 <p style="line-height:1.9; white-space:pre-wrap; text-align:left;">
 
-school il indennu orapano ninak enna deal akkam nee ayit pani thara angane onnum ella daa nee enthe ponnu alle vaveee school il nokkaneeee scn avalle neeee njan elledaaaa 🤭🤭🤭🤭💋
+njan nokkan paranjit indu parthanod scn avalle avide indel kittum neyyy nee padicholu ath aloikanda ketta ath avide indel avan edutholum okeyhh eth matharam aloikanda ketta mwahhhhhh 💋 💋 💋 💋 
 
 </p>
 
