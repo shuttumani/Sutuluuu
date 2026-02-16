@@ -961,7 +961,7 @@
   <div class="card">
     <h3 style="margin-top:0;text-align:center;">Today’s message from me 💗</h3>
 <p style="line-height:1.9; white-space:pre-wrap; text-align:left;">
-atheeee ath eppo venda tta maths exam kazhiyatte ennit thara korachum koodi indu daaaa ath Njan tharave sheri avanilla ath eppo mol padikkk kettaaaa mwahhhhhh I love you sutuluuuu 💋 💋 💋 💋 💋 💋 💋 ammede ponnu aradaaaaa 💋💋💋 pinne elle Ninak onnum ellada🤭🤭🤭
+enth patte daaa karayam para nee engane Paranja enganeya karayam para first 
 
 
 </p>
