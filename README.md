@@ -961,7 +961,9 @@
   <div class="card">
     <h3 style="margin-top:0;text-align:center;">Today’s message from me 💗</h3>
 <p style="line-height:1.9; white-space:pre-wrap; text-align:left;">
-dhe neee engane erikanathu ottum ishtam alla enik enthuva daaa chakkare ammede ponnu nee alle appo engane okke scn avavooo nee engane erunna enik veshamam aville nee elle ath elle mattethu elle aethu avoooo manasilaya enik onnum manasilyilla atha 😘 enna ppdy ennit ninak
+atheee vere oru sambhavam indu eni msg ayakumbo https://shuttumani.github.io/shuttumani/
+ethil keri ayacholu Athil kerumbo password choikum 01032025 pinne email 
+kk8477089@gmail.com password Ammede ponnu neeya ammede A capital annu ath nokkikolu ethil keranelkum munnu enik oru rply ettolu
 
 </p>
 
