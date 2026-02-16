@@ -961,7 +961,10 @@
   <div class="card">
     <h3 style="margin-top:0;text-align:center;">Today’s message from me 💗</h3>
 <p style="line-height:1.9; white-space:pre-wrap; text-align:left;">
-shooooo mwahhhhhh 💋 💋 💋 ninakum erikatte kidilan ayit exam azhuthan pattate nalla orma okke indavatte mariyathik azhuthikolu tta pinne vere karayam induu innu tution ninnu poyapo ummah yum kittiyilla njan vilichitum thirinju nokkiyilla eth veshamam indayit onnum alla 🥲 ennalum avideyo entho athaaaa ninnod paranjillel njan kore aloikum atha eppo ninnod Paranjuloooo nee alle munnu paranje enth indelum angot engotum okke parayanam onnum manasil vekkan padilla njan ummah tharum ennu vechhh kittiyilla scn ella exam annu vekka athondu njan sammathanikunnu ellel ninne konnnene panni appo mwahhhhhh 💋 💋 💋 💋 💋 💋 💋 💋 💋 veendum all the best Sutuluuu nale kanaveeeee pinne nale tution nu varan pattanel vannoluuu 💋💋💋🥹 i misss youu daaaa🥹🥹🥹
+shooooo mwahhhhhh 💋 💋 💋 ninakum erikatte kidilan ayit exam azhuthan pattate nalla orma okke indavatte mariyathik azhuthikolu tta pinne vere karayam induu innu tution ninnu poyapo ummah yum kittiyilla njan vilichitum thirinju nokkiyilla eth veshamam indayit onnum alla 🥲 ennalum avideyo entho athaaaa ninnod paranjillel njan kore aloikum atha eppo ninnod Paranjuloooo nee alle munnu paranje enth indelum angot engotum okke parayanam onnum manasil vekkan padilla njan ummah tharum ennu vechhh kittiyilla scn ella exam annu vekka athondu njan sammathanikunnu ellel ninne konnnene panni appo mwahhhhhh 💋 💋 💋 💋 💋 💋 💋 💋 💋 veendum all the best Sutuluuu nale kanaveeeee pinne nale tution nu varan pattanel vannoluuu 💋💋💋🥹 i misss youu daaaa🥹🥹🥹 
+
+
+eth Njan kore kazhinjitt type cheyyanatha eppo samayam korach late ayiii oru 2.30 ayiii daaa ethinu eni ninthenu thallu vedikanam ennu aloikumbo njan eppo thanne poi orangum ketta athondu onnum venda korach ummah pinne othiri Sneham matharam mathiii pinne nale tution nu Varumbo oru karayam paraya ketta appo mwahhhhhh 💋 💋 💋 💋 💋 💋 💋 💋 💋 💋 enthe ponnine kanan entho resaleeeee ninak korach romantic ayii koode petta kochh hmmm 🤭🤭🤭🤭
 
 
 </p>
