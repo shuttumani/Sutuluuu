@@ -961,7 +961,7 @@
   <div class="card">
     <h3 style="margin-top:0;text-align:center;">Today’s message from me 💗</h3>
 <p style="line-height:1.9; white-space:pre-wrap; text-align:left;">
-enth patte daaa karayam para nee engane Paranja enganeya karayam para first 
+shooooo mwahhhhhh 💋 💋 💋 ninakum erikatte kidilan ayit exam azhuthan pattate nalla orma okke indavatte mariyathik azhuthikolu tta pinne vere karayam induu innu tution ninnu poyapo ummah yum kittiyilla njan vilichitum thirinju nokkiyilla eth veshamam indayit onnum alla 🥲 ennalum avideyo entho athaaaa ninnod paranjillel njan kore aloikum atha eppo ninnod Paranjuloooo nee alle munnu paranje enth indelum angot engotum okke parayanam onnum manasil vekkan padilla njan ummah tharum ennu vechhh kittiyilla scn ella exam annu vekka athondu njan sammathanikunnu ellel ninne konnnene panni appo mwahhhhhh 💋 💋 💋 💋 💋 💋 💋 💋 💋 veendum all the best Sutuluuu nale kanaveeeee pinne nale tution nu varan pattanel vannoluuu 💋💋💋🥹 i misss youu daaaa🥹🥹🥹
 
 
 </p>
