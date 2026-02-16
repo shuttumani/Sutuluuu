@@ -960,16 +960,13 @@
 <h3 id="diaryDate" style="text-align:center; opacity:.8; margin-top:-6px;"></h3>
   <div class="card">
     <h3 style="margin-top:0;text-align:center;">Today’s message from me 💗</h3>
-
 <p style="line-height:1.9; white-space:pre-wrap; text-align:left;">
 
-Crush adicha Ninak entha Paranja nayeeee vigaram okke ullil othukanam leeee secret para neyyy ninne okke aruu kidnap cheyyana enthe ponnahhhh ath entha pretheksha ellathe Ninak 26 vayasil arelum plus one il Njan committed anno ennu choicha athe ennu parayum allelum ennod arum vannu choikilla pedikanda daaaa nale exam alle padicholu mariyathik innu nerathe kedannu orangikolu tta Veruthe kore aloikanda neee ketta Njan paranjathu kettoluuuuiii pinne Njan padikanindu Njan scn annu ariyalooooo nee paranjathil possesive vanna samsaram njan paranjathil enthokke Ninak thoniyeee angane appo enikum angane nee paranjathil thonnuleeee eya sam inthe karayam pinne vere angane onnum ella 😁😁😁😁 enthe ponne Njan vere school il poyinnu vech Njan arodum mindan ponilla enthe vaveeeee enik nee elledaaa 🤭🤭🤭🤭🤭🤭💋💋💋💋 enthe allam arinjit thanneya nee yes paranje okkk pakshe Ennale paranjille last enik onnum manasilyilla onnude parayo
+Enik elle ninne elle bhayankara ishtam a nayeeeee nee vellathum ariyanindo vere oru sambhavam nokkanu indu ath maths exam kazhiyatte ellel eya dhivasam full athinu povum neyy pinne chelappo Njan thokkum nale athonda pinne ninne kondu poovollu nayeee appane deal akkaneeee scn avalle 
 
-[pineee indaloo ninte ellamkarayam arinjatum thaneyaa nenod yes paranjathu. Pakshe enikii indaloo nenee enter munnil ayalum kuduthal thazuthunathuu eshtamalaa means epoozum thallu pidichal kuduthal neeyaa vannu mindar Njan onnum angot mindar ella athuu nee enthelum paranajt eshtapedathond ayirikum ath veree alle nthuvaa avlk aval poyalum nee kenjii chelum aennu ariyaa enikiii angnee varanathu ottum eshtamelaa neee karyathinu anusarichu ataa najn parayanee apoo sherii aenaaaaa 😙😙😙😙😙]
+Ennale kore nokki ennu ariyaaa shemikada ponnah ammede ponnu nee alleda  
 
-eth entha ennu onnude parayo plss 😁 onnum manasilyilla neyyy pinne Ennale ambalathil poyiii tta ninakum enikum okke prathichuu pinne innu palliyil ponam ennu samayam kittiyal onnu ponam Chalakudy vare ponde athaaaaa pinne ummahhh 💋💋💋💋💋💋💋💋💋💋💋♾️ I love you daaaa ninne kanandu erunnit oru sugam elladaaa chakkareeeeeee Ennale Njan msg kandu pinne Ennale thotu full tension adaaaaa exam allata vere ath pinne paraya pakshe atheeee oru karayam choikitte Ninak elle ath elle mattethu elle aethu lathu onnum ella 😁😁😁😁😁😁😁😁😁😁 nee poda panni ottak ottak vaada nee edichu theerka enthey nokkane neee undakanni venda neeee ketta enne pedi okke venam ketta nee avide ayondu enth venelum paraya aethu ennodeeee 🤭🤭🤭🤭🤭😘😘😘😘😘😘☺️ pinne elle mattethu elle onnum ella chumma 😁😁😁 enik oru sugam mariyathik erunnu padikadiiii avalude oru ethhh enik veendum oru sugam engane parayumbo enthaleeeeeee enthe oro karyangaleeeee pinne elle ninne enik kitto para nee para sytm parayanam ketta sytm korach enik ariyanakond veshamam onnum ella ennalum entho 🥹🥲 ennalum para aduthathu neee eth vayich rply thaaa appo thara tta panni kutti patti thendi Enthadi nokkane avalude oru eth ninne pedi onnum ellata ketta 😁  
-
-I Love you ponnahhhh ❤️❤️❤️❤️❤️♾️♾️😘😘😘😘 mwahhhhhh 💋💋💋💋💋💋💋💋 enthe athra Sneham onnum Ninak ella athondu scn ella 😘😘😘😘😘😘😘😘😘😘😘😘😘😘😘😘😘😘😘😘🫂🫂🫂🫂🫂🫂
+Eppo school ilek poyondirika id okke kodukande athonda vannit bhaki ayaka 💗
 
 </p>
 
