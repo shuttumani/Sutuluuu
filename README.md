@@ -965,6 +965,7 @@ deyy pettanu para kananilla daa ninak onnu pettanu nokkikudeee athra neeram ayii
 
 
   🥺🥺🥺🥺🥲🥲🥲😭😭😭😭😭😭😭 avideyada neeee 😌
+edaaa avideee enik annel neee mindandu oru sugam elladaaa nee eni orangiyoooo 🥺😌 appozhavo eni vara
 </p>
 
     <div style="display:flex;gap:10px;justify-content:center;flex-wrap:wrap;margin-top:16px;">
