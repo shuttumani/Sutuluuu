@@ -961,7 +961,7 @@
   <div class="card">
     <h3 style="margin-top:0;text-align:center;">Today’s message from me 💗</h3>
 <p style="line-height:1.9; white-space:pre-wrap; text-align:left;">
-enthonada ath kazhinjille ath potte kazhinjathu kazhinju nee ath kalanje njan enthoram paranju nerthe Ennit nee rply thannatho ethum bla bla bla bla 
+edaaaaa njan oru karayam Paranja cheyyo nee oru snap install cheyy ennit request ayaki appo sugam ayiii aethuuu 😁 eth korach pada ennalum scn ella penangalle daaa ennod allel njan email pass tharano enthe snap inthe athil keri enthe main acc il msg ayacha mathi nee onnu pettanu kanate tto eni pettanu rply thara njan choru mamam thinnarnu
 </p>
 
     <div style="display:flex;gap:10px;justify-content:center;flex-wrap:wrap;margin-top:16px;">
