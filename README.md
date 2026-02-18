@@ -961,7 +961,7 @@
   <div class="card">
     <h3 style="margin-top:0;text-align:center;">Today’s message from me 💗</h3>
 <p style="line-height:1.9; white-space:pre-wrap; text-align:left;">
-eyyy ellada Njan poyilla nee vanillalo njan eni poyi erikande atha bore adikum avide poya padika pinne innu padikan oru mood ellada innu annel onnum padichit ella njan enthaleeeee korach cheetha parayoooo enne pinne ammede ponninu sugalle 💋💋💋💋💋 ennale njan Ummah tharanelkum munnu poyille nee panni nee mindanda ammede ponnine kanan enthoru resaaa ninthe opposite erunnu njan kore neeram ninne nokki pinne mash ollapoo ninne upadhravikan entho resaaaaa pinne  entha nee para innu entha ppdy nale vannoluuu tta mwahhhhhh 💋 💋 💋 💋 💋 bhaki parayatte enna nee poda panni enthe suttumani araaaaadaaaa. 🤭🤭🤭💋💋💋💋♾️ ammede ponnu neeyano daaa💋💋💋💋
+enthonada ath kazhinjille ath potte kazhinjathu kazhinju nee ath kalanje njan enthoram paranju nerthe Ennit nee rply thannatho ethum bla bla bla bla 
 </p>
 
     <div style="display:flex;gap:10px;justify-content:center;flex-wrap:wrap;margin-top:16px;">
