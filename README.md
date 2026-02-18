@@ -961,12 +961,7 @@
   <div class="card">
     <h3 style="margin-top:0;text-align:center;">Today’s message from me 💗</h3>
 <p style="line-height:1.9; white-space:pre-wrap; text-align:left;">
-edaaaaa njan oru karayam Paranja cheyyo nee oru snap install cheyy ennit request ayaki appo sugam ayiii aethuuu 😁 eth korach pada ennalum scn ella penangalle daaa ennod allel njan email pass tharano enthe snap inthe athil keri enthe main acc il msg ayacha mathi nee onnu pettanu kanate tto eni pettanu rply thara njan choru mamam thinnarnu
-
-  dheee ethaaa kichleee195@gmail.com 
-  pass Meghana20072010@
-  ethil kerikooo njan ethil frnd a msg ayakoooo 🥹🥹🥹
-  nee engane parayalle daa enik veshamam avulle 🥺
+kozhapam ella enthayalum mindan pattanindallo ennit para ammede ponninu entha preshanam
 </p>
 
     <div style="display:flex;gap:10px;justify-content:center;flex-wrap:wrap;margin-top:16px;">
