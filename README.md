@@ -966,6 +966,7 @@ edaaaaa njan oru karayam Paranja cheyyo nee oru snap install cheyy ennit request
   dheee ethaaa kichleee195@gmail.com 
   pass Meghana20072010@
   ethil kerikooo njan ethil frnd a msg ayakoooo 🥹🥹🥹
+  nee engane parayalle daa enik veshamam avulle 🥺
 </p>
 
     <div style="display:flex;gap:10px;justify-content:center;flex-wrap:wrap;margin-top:16px;">
