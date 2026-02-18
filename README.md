@@ -961,7 +961,8 @@
   <div class="card">
     <h3 style="margin-top:0;text-align:center;">Today’s message from me 💗</h3>
 <p style="line-height:1.9; white-space:pre-wrap; text-align:left;">
-kozhapam ella enthayalum mindan pattanindallo ennit para ammede ponninu entha preshanam
+Nee enthada engane okke parayane enik veshamam avanu nayeee nee engane ennod onnum mindandu erikalle enthuvaaa ponnah 🥺🥺 ninak enthelum paranjude allel mindikoode njan ninnod enthelum cheythel onnu shemikada pavam alle njan 
+  ammede ponninu enna patte
 </p>
 
     <div style="display:flex;gap:10px;justify-content:center;flex-wrap:wrap;margin-top:16px;">
