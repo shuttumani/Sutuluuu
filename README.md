@@ -961,12 +961,7 @@
   <div class="card">
     <h3 style="margin-top:0;text-align:center;">Today’s message from me 💗</h3>
 <p style="line-height:1.9; white-space:pre-wrap; text-align:left;">
-deyy pettanu para kananilla daa ninak onnu pettanu nokkikudeee athra neeram ayiii nokkane neee eppo msg ayakum ennu nokki
-
-
-  🥺🥺🥺🥺🥲🥲🥲😭😭😭😭😭😭😭 avideyada neeee 😌
-edaaa avideee enik annel neee mindandu oru sugam elladaaa nee eni orangiyoooo 🥺😌 appozhavo eni vara
-njan ninnod pinangiii nee pokko panni kochhh enik sherikum veshamam ayiii. 😭😭😭😭😭 athra neeram nokki erikaneeeee nu ariyoooo ninak athyam a snap id paranjude eni nee eppo avide avoooo last msg ayachappo parayarnu athum paranjilla nee njn mindilla ninnod nokkikoooo enik sherikum veshamam ayiii daaaaa nee eppo orangiyit indavum eppo samayam 1.08 ayiii correct ninnod enik mindanam ennu indayiiii eni eppo nee ellalo njan aroduu mindanaaaaa aru indayittttt enik ake ollathu neee alle ninnod allandu arodaaa mindaaaa nee vellathum arinjoooo njan oru karayam parayitte ennu ennale thodangi parayanille athuuu ariyandeeeeee ath potte ennu vekka samayam induuuuu edaaaa nee pinne innu angane okke paranjapo enik sherikum veshamam ayiiiii scn ella nee alle athonduuuu vere arum ellalo engane parayan edaaaaaaaaaaa enik ninnod onnu samsarikanam daaaaa🥺🥺🥺🥺🥺🥺 neeee avideyadaaaaa ninnod samsarikumbo enth happy annu ariyoooooii vere oru karayam polum varilla athra sammathanam indu ninthe eduth njan bhaki onnum parayanilla.............🥺 i miss youuuu daaaaa🥺🥺🥺🥺😭 koreee kore koreeeee🫂
+eth ennalum kore ayiii engane ennod vendarnuuu🥺
 </p>
 
     <div style="display:flex;gap:10px;justify-content:center;flex-wrap:wrap;margin-top:16px;">
